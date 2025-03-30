@@ -3,7 +3,7 @@
   gap: calc(2 * var(--gap));
   max-width: 800px;
   margin: 0 auto;
-  margin-top: calc(5 * var(--margin));
+  margin-top: calc(12 * var(--margin));
 }
 
 .title {
@@ -13,7 +13,7 @@
 
 .heading {
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
   animation: animate ease-in-out 1.8s infinite alternate;
 }
 
@@ -21,10 +21,36 @@
 }
 
 .footer {
+  margin-top: calc(3 * var(--margin));
+}
+
+.contactMe {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: calc(2 * var(--gap));
   margin-top: calc(3 * var(--margin));
+  text-transform: uppercase;
+}
+
+.iconWrapper {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.brands {
+  display: flex;
 }
 
 .imageWrapper {

@@ -76,6 +76,10 @@ ul {
   padding: 0;
 }
 
+li {
+  display: flex;
+}
+
 button,
 input[type="submit"],
 input[type="reset"] {

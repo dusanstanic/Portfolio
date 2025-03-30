@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import classes from "./TextAnimated.module.css";
 
 interface ITextAnimatedProps {
@@ -10,12 +12,25 @@ export const TextAnimated = ({ words }: ITextAnimatedProps) => {
       {words.map((word) => {
         const letters = [];
         for (let i = 0; i < word.length; i++) {
-          letters.push(<span className={classes.key}>{word.charAt(i)}</span>);
+          letters.push(
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.25,
+                delay: i / 10,
+              }}
+              className={classes.key}
+              key={i}
+            >
+              {word.charAt(i)}
+            </motion.span>
+          );
         }
 
         return (
           <>
-            <span>{letters}</span>{" "}
+            <>{letters}</>{" "}
           </>
         );
       })}
