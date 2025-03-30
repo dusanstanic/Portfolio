@@ -5,7 +5,16 @@
 }
 
 .main {
+  margin: 0 auto;
   display: grid;
-  gap: calc(3 * var(--gap));
+  gap: calc(20 * var(--gap));
   padding-top: var(--navgiation-height);
+
+  @include desktop {
+    max-width: 800px;
+  }
+
+  @include tablet-lg {
+    max-width: 390px;
+  }
 }

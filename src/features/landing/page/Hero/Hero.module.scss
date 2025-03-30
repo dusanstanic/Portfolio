@@ -1,16 +1,7 @@
 .container {
   display: grid;
   gap: calc(2 * var(--gap));
-  margin: 0 auto;
   margin-top: calc(8 * var(--margin));
-
-  @include desktop {
-    max-width: 800px;
-  }
-
-  @include tablet-lg {
-    max-width: 390px;
-  }
 }
 
 .title {

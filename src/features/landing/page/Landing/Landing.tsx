@@ -1,9 +1,10 @@
 import { Navigation } from "../Navigation/Navigation";
 import { Hero } from "../Hero/Hero";
-
-import classes from "./Landing.module.scss";
+import { Projects } from "../Projects/Projects";
 
 import { HeroProps } from "./constant";
+
+import classes from "./Landing.module.scss";
 
 export const Landing = () => {
   return (
@@ -11,6 +12,7 @@ export const Landing = () => {
       <Navigation />
       <main className={classes.main}>
         <Hero {...HeroProps} />
+        <Projects />
       </main>
     </div>
   );
