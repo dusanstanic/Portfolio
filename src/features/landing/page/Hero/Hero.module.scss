@@ -7,6 +7,10 @@
   @include desktop {
     max-width: 800px;
   }
+
+  @include tablet-lg {
+    max-width: 390px;
+  }
 }
 
 .title {
@@ -38,6 +42,10 @@
     align-items: start;
     gap: calc(6 * var(--gap));
   }
+}
+
+.description {
+  text-align: justify;
 }
 
 .social {

@@ -10,8 +10,26 @@
   }
 }
 
-@mixin table-lg {
-  @media (max-width: 800px) {
+@mixin tablet-lg {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin tablet-sm {
+  @media (max-width: 620px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
     @content;
   }
 }
