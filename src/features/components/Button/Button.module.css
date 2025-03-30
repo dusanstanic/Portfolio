@@ -1,4 +1,5 @@
 .button {
+  font-weight: bold;
   transition: all 0.5s ease-in-out;
 
   &:hover {
@@ -9,11 +10,23 @@
 .default {
   background-color: var(--button-default-bg-color);
   color: var(--button-default-text-color);
-  padding: 10px 15px;
 
   transition: all 0.5s ease-in-out;
 }
 
 .rounded {
   border-radius: 15px;
+}
+
+.small {
+  padding: 10px 15px;
+}
+
+.medium {
+  padding: 10px 15px;
+}
+
+.large {
+  font-size: 1.2rem;
+  padding: 15px 25px;
 }

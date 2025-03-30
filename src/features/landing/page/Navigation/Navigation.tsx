@@ -1,3 +1,5 @@
+import { Link } from "@/features/components/Link/Link";
+
 import classes from "./Navigation.module.css";
 
 export const Navigation = () => {
@@ -5,9 +7,15 @@ export const Navigation = () => {
     <div className={classes.container}>
       <nav className={classes.navigation}>
         <ul className={classes.list}>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <Link>Project</Link>
+          </li>
+          <li>
+            <Link>About</Link>
+          </li>
+          <li>
+            <Link>Get CV</Link>
+          </li>
         </ul>
       </nav>
     </div>

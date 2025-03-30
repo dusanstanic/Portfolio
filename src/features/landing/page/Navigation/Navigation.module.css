@@ -7,13 +7,15 @@
 
 .navigation {
   display: flex;
+  justify-content: flex-end;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 15px var(--padding-main);
-  height: var(--navgiation-height);
+  padding: 35px var(--padding-main);
+  /* height: var(--navgiation-height); */
 }
 
 .list {
   display: flex;
   align-items: center;
+  gap: calc(2 * var(--gap));
 }

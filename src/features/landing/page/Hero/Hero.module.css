@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  gap: calc(2 * var(--gap));
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: calc(5 * var(--margin));
+}
+
+.title {
+  text-align: left;
+  text-wrap: initial;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 5rem;
+  animation: animate ease-in-out 1.8s infinite alternate;
+}
+
+.description {
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: calc(3 * var(--margin));
+}
+
+.imageWrapper {
+  border-radius: 100%;
+  max-width: 100px;
+  height: 100px;
+  overflow: hidden;
+  transform: translateY(-40px);
+}
