@@ -3,6 +3,10 @@
   gap: calc(2 * var(--gap));
   margin: 0 auto;
   margin-top: calc(8 * var(--margin));
+
+  @include desktop {
+    max-width: 800px;
+  }
 }
 
 .title {
@@ -14,17 +18,18 @@
   text-transform: uppercase;
   font-size: 6rem;
   animation: animate ease-in-out 1.8s infinite alternate;
+
+  @include desktop {
+    font-size: 4rem;
+  }
 }
 
 .body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: calc(2 * var(--gap));
   margin-top: calc(3 * var(--margin));
-
-  // @include for-phone-only {
-  //   flex-direction: column;
-  // }
 }
 
 .image {
