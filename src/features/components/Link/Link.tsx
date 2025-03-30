@@ -1,7 +1,5 @@
 import { LinkHTMLAttributes, ReactElement } from "react";
 
-import { motion } from "framer-motion";
-
 import { vairant } from "./type";
 import { getClassName } from "./helper";
 
@@ -19,10 +17,10 @@ export const Link = ({
   ...props
 }: ILinkProps) => {
   return (
-    <motion.div whileTap={{ scale: 0.85 }} whileHover={{ scale: 1.05 }}>
+    <div>
       <a className={getClassName({ variant, className, rounded })} {...props}>
         {children}
       </a>
-    </motion.div>
+    </div>
   );
 };

@@ -1,11 +1,11 @@
-import { ButtonHTMLAttributes, ReactElement } from "react";
+import { ReactElement } from "react";
 
-import { motion } from "framer-motion";
+import { HTMLMotionProps, motion } from "framer-motion";
 
 import { vairant, size } from "./type";
 import { getClassName } from "./helper";
 
-interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IButtonProps extends HTMLMotionProps<"button"> {
   children: ReactElement | string;
   variant?: vairant;
   rounded?: boolean;
@@ -21,13 +21,15 @@ export const Button = ({
   ...props
 }: IButtonProps) => {
   return (
-    <motion.div whileTap={{ scale: 0.85 }} whileHover={{ scale: 1.05 }}>
-      <button
+    <div>
+      <motion.button
+        whileTap={{ scale: 0.85 }}
+        whileHover={{ scale: 1.05 }}
         className={getClassName({ variant, className, rounded, size })}
         {...props}
       >
         {children}
-      </button>
-    </motion.div>
+      </motion.button>
+    </div>
   );
 };

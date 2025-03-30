@@ -1,0 +1,12 @@
+.tools {
+  display: flex;
+  align-items: center;
+  gap: calc(2 * var(--gap));
+  flex-wrap: wrap;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  gap: calc(1 * var(--gap));
+}

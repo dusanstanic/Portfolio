@@ -8,13 +8,13 @@ export const Navigation = () => {
       <nav className={classes.navigation}>
         <ul className={classes.list}>
           <li>
-            <Link>Project</Link>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            <Link>Get CV</Link>
+            <Link href="#getCV">Get CV</Link>
           </li>
         </ul>
       </nav>

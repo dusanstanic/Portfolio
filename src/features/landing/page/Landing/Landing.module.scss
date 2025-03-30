@@ -7,7 +7,7 @@
 .main {
   margin: 0 auto;
   display: grid;
-  gap: calc(20 * var(--gap));
+  gap: calc(25 * var(--gap));
   padding-top: var(--navgiation-height);
 
   @include desktop {

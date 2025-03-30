@@ -1,6 +1,6 @@
 .button {
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     filter: brightness(60%);
@@ -10,8 +10,6 @@
 .default {
   background-color: var(--button-default-bg-color);
   color: var(--button-default-text-color);
-
-  transition: all 0.5s ease-in-out;
 }
 
 .rounded {
