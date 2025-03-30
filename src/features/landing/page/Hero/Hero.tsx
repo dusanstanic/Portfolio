@@ -22,10 +22,10 @@ export const Hero = ({ text, title, socialLinks }: IHeroProps) => {
       <div className={classes.title}>
         <h1 className={classes.heading}>
           <TextAnimated words={title}></TextAnimated>
-          <div className={classes.imageWrapper}>
-            <img alt="User Image" src={image} />
-          </div>
         </h1>
+      </div>
+      <div className={classes.imageWrapper}>
+        <img alt="User Image" src={image} />
       </div>
       <div className={classes.body}>
         <div className={classes.social}>
