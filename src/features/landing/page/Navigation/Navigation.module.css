@@ -8,7 +8,13 @@
 }
 
 .navigation {
+  display: flex;
   max-width: var(--container-width);
   margin: 0 auto;
   padding: calc(2 * var(--padding));
+}
+
+.list {
+  display: flex;
+  align-items: center;
 }

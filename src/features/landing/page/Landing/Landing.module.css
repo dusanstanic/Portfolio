@@ -1,0 +1,5 @@
+.landing {
+  display: grid;
+  gap: calc(2 * var(--gap));
+  height: 100%;
+}
