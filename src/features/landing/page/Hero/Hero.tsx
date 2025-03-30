@@ -14,9 +14,10 @@ interface IHeroProps {
   title: Array<string>;
   text: string;
   socialLinks: { linkedInUrl: string };
+  email: string;
 }
 
-export const Hero = ({ text, title, socialLinks }: IHeroProps) => {
+export const Hero = ({ text, title, socialLinks, email }: IHeroProps) => {
   return (
     <div className={classes.container}>
       <div className={classes.title}>
@@ -43,7 +44,14 @@ export const Hero = ({ text, title, socialLinks }: IHeroProps) => {
         <p className={classes.description}>{text}</p>
         <div className={classes.contact}>
           <div className={classes.contactMe}>
-            <Button size="large">Contact Me</Button>
+            <Button
+              size="large"
+              onClick={() => {
+                window.location.href = `mailto:${email}?subject=Subject&body=Hello Dusan`;
+              }}
+            >
+              Contact Me
+            </Button>
           </div>
         </div>
       </div>
