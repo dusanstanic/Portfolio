@@ -1,0 +1,14 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--primary);
+}
+
+.navigation {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: calc(2 * var(--padding));
+}

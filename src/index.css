@@ -14,26 +14,61 @@ html {
 
 body {
   height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 body > #root {
   height: 100%;
-  max-width: 1280px;
+  max-width: var(--container-width);
   margin: 0 auto;
   line-height: 1.5;
 }
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
   }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

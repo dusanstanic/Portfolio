@@ -1,0 +1,9 @@
+[data-theme="light"] {
+  --bg-color: var(--white);
+  --text-color: var(--black);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--black);
+  --text-color: var(--white);
+}
