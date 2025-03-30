@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes, ReactElement } from "react";
 
+import { motion } from "framer-motion";
+
 import { vairant, size } from "./type";
 import { getClassName } from "./helper";
 
@@ -19,13 +21,13 @@ export const Button = ({
   ...props
 }: IButtonProps) => {
   return (
-    <div>
+    <motion.div whileTap={{ scale: 0.85 }}>
       <button
         className={getClassName({ variant, className, rounded, size })}
         {...props}
       >
         {children}
       </button>
-    </div>
+    </motion.div>
   );
 };
