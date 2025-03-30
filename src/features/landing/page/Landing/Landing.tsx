@@ -5,9 +5,9 @@ import classes from "./Landing.module.css";
 
 export const Landing = () => {
   return (
-    <div className={classes.landing}>
+    <div className={classes.container}>
       <Navigation />
-      <main>
+      <main className={classes.main}>
         <Hero />
       </main>
     </div>

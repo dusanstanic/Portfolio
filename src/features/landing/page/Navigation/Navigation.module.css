@@ -3,15 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
-
-  background-color: var(--primary);
 }
 
 .navigation {
   display: flex;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: calc(2 * var(--padding));
+  padding: 15px var(--padding-main);
+  height: var(--navgiation-height);
 }
 
 .list {

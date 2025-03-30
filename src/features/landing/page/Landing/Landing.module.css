@@ -1,5 +1,13 @@
-.landing {
+.container {
   display: grid;
   gap: calc(2 * var(--gap));
   height: 100%;
+  padding: var(--padding-main);
+}
+
+.main {
+  display: grid;
+  gap: calc(3 * var(--gap));
+  height: 100%;
+  padding-top: var(--navgiation-height);
 }
