@@ -16,12 +16,7 @@
 
 .heading {
   text-transform: uppercase;
-  font-size: 6rem;
   animation: animate ease-in-out 1.8s infinite alternate;
-
-  @include desktop {
-    font-size: 4rem;
-  }
 }
 
 .imageWrapper {
@@ -41,6 +36,7 @@
   @include desktop {
     flex-direction: column;
     align-items: start;
+    gap: calc(6 * var(--gap));
   }
 }
 
@@ -49,6 +45,10 @@
   align-items: center;
   gap: calc(2 * var(--gap));
   text-transform: uppercase;
+
+  @include desktop {
+    order: 2;
+  }
 
   .iconWrapper {
     display: block;
@@ -70,8 +70,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.brands {
-  display: flex;
+  .brands {
+    display: flex;
+  }
 }

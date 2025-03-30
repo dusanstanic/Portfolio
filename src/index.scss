@@ -95,3 +95,11 @@ input[type="reset"] {
 a {
   cursor: pointer;
 }
+
+h1 {
+  font-size: 6rem;
+
+  @include desktop {
+    font-size: 4rem;
+  }
+}
