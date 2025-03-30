@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import classes from "./TextAnimated.module.css";
+import classes from "./TextAnimated.module.scss";
 
 interface ITextAnimatedProps {
   words: Array<string>;

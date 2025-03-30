@@ -1,6 +1,6 @@
 import { size, vairant } from "./type";
 
-import classes from "./Button.module.css";
+import classes from "./Button.module.scss";
 
 interface IGetClassNameProps {
   variant: vairant;

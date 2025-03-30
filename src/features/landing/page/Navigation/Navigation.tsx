@@ -1,6 +1,6 @@
 import { Link } from "@/features/components/Link/Link";
 
-import classes from "./Navigation.module.css";
+import classes from "./Navigation.module.scss";
 
 export const Navigation = () => {
   return (

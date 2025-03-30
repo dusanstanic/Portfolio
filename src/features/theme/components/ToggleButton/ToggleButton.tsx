@@ -5,7 +5,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/features/components/Button/Button";
 import { useThemeContext } from "@/features/theme/context";
 
-import classes from "./ToggleButton.module.css";
+import classes from "./ToggleButton.module.scss";
 
 export const ToggleButton = () => {
   const { toggleTheme, darkMode } = useThemeContext();

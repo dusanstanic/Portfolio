@@ -1,7 +1,7 @@
 import { Navigation } from "../Navigation/Navigation";
 import { Hero } from "../Hero/Hero";
 
-import classes from "./Landing.module.css";
+import classes from "./Landing.module.scss";
 
 import { HeroProps } from "./constant";
 

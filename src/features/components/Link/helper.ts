@@ -1,6 +1,6 @@
 import { vairant } from "./type";
 
-import classes from "./Link.module.css";
+import classes from "./Link.module.scss";
 
 interface IGetClassNameProps {
   variant: vairant;

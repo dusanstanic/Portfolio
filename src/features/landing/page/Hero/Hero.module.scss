@@ -1,9 +1,8 @@
 .container {
   display: grid;
   gap: calc(2 * var(--gap));
-  max-width: 800px;
   margin: 0 auto;
-  margin-top: calc(12 * var(--margin));
+  margin-top: calc(8 * var(--margin));
 }
 
 .title {
@@ -13,15 +12,37 @@
 
 .heading {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 6rem;
   animation: animate ease-in-out 1.8s infinite alternate;
 }
 
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: calc(3 * var(--margin));
+
+  // @include for-phone-only {
+  //   flex-direction: column;
+  // }
+}
+
+.image {
+  position: absolute;
+}
+
+.imageWrapper {
+  border-radius: 100%;
+  max-width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
 .description {
+  max-width: 800px;
 }
 
 .footer {
-  margin-top: calc(3 * var(--margin));
 }
 
 .contactMe {
@@ -34,14 +55,13 @@
   display: flex;
   align-items: center;
   gap: calc(2 * var(--gap));
-  margin-top: calc(3 * var(--margin));
   text-transform: uppercase;
 }
 
 .iconWrapper {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .icon {
@@ -51,12 +71,4 @@
 
 .brands {
   display: flex;
-}
-
-.imageWrapper {
-  border-radius: 100%;
-  max-width: 100px;
-  height: 100px;
-  overflow: hidden;
-  transform: translateY(-40px);
 }
