@@ -10,6 +10,7 @@
 }
 
 .heading {
+  @include textShadow(10%);
   text-transform: uppercase;
   animation: animate ease-in-out 1.8s infinite alternate;
 }

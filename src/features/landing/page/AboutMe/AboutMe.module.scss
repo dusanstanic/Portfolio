@@ -9,7 +9,12 @@
   }
 }
 
+.headingContainer {
+  @include textShadow(10%);
+}
+
 .imageWrapper {
+  @include imageShadow;
   border-radius: 25px;
   max-width: 350px;
   overflow: hidden;
@@ -20,8 +25,7 @@
 }
 
 .text {
-  background-color: var(--bg-color);
-  transform: translateY(-15px);
+  @include textShadow(50%);
   border-radius: 15px;
   padding: 10px 15px;
   font-size: 1.5rem;
