@@ -1,4 +1,4 @@
-import { IProject } from "@/features/landing/page/Landing/type";
+import { IProject } from "@/features/project/api/type";
 
 import { Cards } from "./Cards/Cards";
 

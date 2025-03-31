@@ -1,4 +1,4 @@
-import { IProject } from "./type";
+import { IProject } from "@/features/project/api/type";
 
 import {
   AngularTool,

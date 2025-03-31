@@ -1,7 +1,8 @@
-import { ITool } from "@/features/landing/page/Landing/type";
+import { Button } from "@/features/components/Button/Button";
+
+import { ITool } from "@/features/project/api/type";
 
 import classes from "./Tools.module.scss";
-import { Button } from "@/features/components/Button/Button";
 
 interface IToolsProps {
   tools: Array<ITool>;
