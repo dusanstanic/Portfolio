@@ -2,13 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import { Button } from "@/features/components/Button/Button";
-import { TextAnimated } from "@/features/components/animation/TextAnimated/TextAnimated";
+import { Button } from "@/components/Button/Button";
+import { Link } from "@/components/Link/Link";
+import { TextAnimated } from "@/components/animation/TextAnimated/TextAnimated";
 
 import image from "@/assets/DusanStanic.jpg";
 
 import classes from "./Hero.module.scss";
-import { Link } from "@/features/components/Link/Link";
 
 interface IHeroProps {
   title: Array<string>;

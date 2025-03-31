@@ -1,4 +1,4 @@
-import { Button } from "@/features/components/Button/Button";
+import { Button } from "@/components/Button/Button";
 
 import { ITool } from "@/features/project/api/type";
 

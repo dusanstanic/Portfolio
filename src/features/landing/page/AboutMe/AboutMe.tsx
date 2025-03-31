@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSchool, faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./AboutMe.module.scss";
-import { Button } from "@/features/components/Button/Button";
+import { Button } from "@/components/Button/Button";
 
 interface IAboutMeProps {
   educations: Array<{

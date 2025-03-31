@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
-import { Button } from "@/features/components/Button/Button";
+import { Button } from "@/components/Button/Button";
+
 import { useThemeContext } from "@/features/theme/context";
 
 import classes from "./ToggleButton.module.scss";

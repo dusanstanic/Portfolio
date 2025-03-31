@@ -1,4 +1,4 @@
-import { Link } from "@/features/components/Link/Link";
+import { Link } from "@/components/Link/Link";
 
 import classes from "./Navigation.module.scss";
 

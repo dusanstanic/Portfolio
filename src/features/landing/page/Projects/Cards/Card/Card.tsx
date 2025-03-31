@@ -1,9 +1,9 @@
-import { IProject } from "@/features/project/api/type";
+import { Button } from "@/components/Button/Button";
 
+import { IProject } from "@/features/project/api/type";
 import { Tools } from "./Tools/Tools";
 
 import classes from "./Card.module.scss";
-import { Button } from "@/features/components/Button/Button";
 
 export const Card = ({ title, description, tools }: IProject) => {
   return (
