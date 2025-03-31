@@ -79,20 +79,7 @@ export const ProjectProps: { projects: Array<IProject> } = {
 };
 
 export const AboutMeProps = {
-  educations: [
-    {
-      title: "Information Technology",
-      name: "Faculty of Sciences, University of Novi Sad",
-    },
-  ],
-  languages: [
-    {
-      name: "English",
-      level: "C2 (lived in Canada 10 years)",
-    },
-    {
-      name: "Serbian",
-      level: "C2",
-    },
-  ],
+  title:
+    "Hello! I am Dusan, a dedicated and creative software engineer with a passion for shaping the digital world.",
+  text: "I specialize in developing scalable and robust software architectures emphasizing reusability and maintainability, boosting team productivity and reduced bug occurrences",
 };

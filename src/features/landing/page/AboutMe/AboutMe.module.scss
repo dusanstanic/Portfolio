@@ -1,27 +1,28 @@
 .aboutMe {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: calc(3 * var(--gap));
+
+  @include desktop {
+    grid-template-columns: 1fr;
+    gap: calc(8 * var(--gap));
+  }
 }
 
-.grid {
-  display: grid;
-  gap: calc(1 * var(--gap));
+.imageWrapper {
+  border-radius: 25px;
+  max-width: 350px;
+  overflow: hidden;
+
+  @include desktop {
+    max-width: 250px;
+  }
 }
 
-.educationHeading {
-  display: flex;
-  align-items: center;
-  gap: calc(1 * var(--gap));
-}
-
-.education {
-  display: flex;
-  align-items: center;
-  gap: calc(1 * var(--gap));
-}
-
-.language {
-  display: flex;
-  align-items: center;
-  gap: calc(1 * var(--gap));
+.text {
+  background-color: var(--bg-color);
+  transform: translateY(-15px);
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
 }
