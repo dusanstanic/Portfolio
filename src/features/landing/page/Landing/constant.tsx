@@ -77,3 +77,22 @@ export const ProjectProps: { projects: Array<IProject> } = {
     },
   ],
 };
+
+export const AboutMeProps = {
+  educations: [
+    {
+      title: "Information Technology",
+      name: "Faculty of Sciences, University of Novi Sad",
+    },
+  ],
+  languages: [
+    {
+      name: "English",
+      level: "C2 (lived in Canada 10 years)",
+    },
+    {
+      name: "Serbian",
+      level: "C2",
+    },
+  ],
+};

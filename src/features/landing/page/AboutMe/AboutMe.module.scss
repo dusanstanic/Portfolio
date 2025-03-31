@@ -1,0 +1,27 @@
+.aboutMe {
+  display: grid;
+  gap: calc(3 * var(--gap));
+}
+
+.grid {
+  display: grid;
+  gap: calc(1 * var(--gap));
+}
+
+.educationHeading {
+  display: flex;
+  align-items: center;
+  gap: calc(1 * var(--gap));
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  gap: calc(1 * var(--gap));
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: calc(1 * var(--gap));
+}
