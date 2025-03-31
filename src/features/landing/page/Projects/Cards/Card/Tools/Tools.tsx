@@ -10,14 +10,16 @@ interface IToolsProps {
 export const Tools = ({ tools }: IToolsProps) => {
   return (
     <div className={classes.tools}>
-      {tools.map(({ name, Icon }) => (
-        <Button size="small">
-          <div className={classes.tool}>
-            <span>{name}</span>
-            {Icon}
-          </div>
-        </Button>
-      ))}
+      {tools
+        .map(({ name, Icon }) => (
+          <Button size="small">
+            <div className={classes.tool}>
+              {name}
+              {Icon}
+            </div>
+          </Button>
+        ))
+        .slice(0, 4)}
       <span>...</span>
     </div>
   );
