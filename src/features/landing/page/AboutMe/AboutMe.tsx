@@ -18,7 +18,7 @@ interface IAboutMeProps {
 
 export const AboutMe = ({ educations, languages }: IAboutMeProps) => {
   return (
-    <div className={classes.aboutMe}>
+    <div className={classes.aboutMe} id="aboutMe">
       <h2>About Me</h2>
       <div className={classes.grid}>
         <div className={classes.educationHeading}>
@@ -30,7 +30,9 @@ export const AboutMe = ({ educations, languages }: IAboutMeProps) => {
         {educations.map(({ name, title }) => {
           return (
             <div className={classes.education}>
-              <span>{name}</span> - <span>{title}</span>
+              <span>
+                {name} - {title}
+              </span>
             </div>
           );
         })}
@@ -45,7 +47,9 @@ export const AboutMe = ({ educations, languages }: IAboutMeProps) => {
         {languages.map(({ name, level }) => {
           return (
             <div className={classes.language}>
-              <span>{name}</span> - <span>{level}</span>
+              <span>
+                {name} - {level}
+              </span>
             </div>
           );
         })}
