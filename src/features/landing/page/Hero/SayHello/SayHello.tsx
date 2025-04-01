@@ -10,7 +10,7 @@ export interface ISayHelloProps extends ISocialsProps {
 
 export const SayHello = ({ email, socialLinks, text }: ISayHelloProps) => {
   return (
-    <div className={classes.body}>
+    <div className={classes.container}>
       <Socials socialLinks={socialLinks} />
       <p className={classes.description}>{text}</p>
       <ContactMe email={email} />
