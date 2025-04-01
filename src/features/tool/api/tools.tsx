@@ -6,9 +6,9 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faNetworkWired,
+  faWifi,
   faBrush,
-  faToolbox,
+  faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFileLines,
@@ -23,7 +23,7 @@ export const JavascriptTool = {
 
 export const TypescriptTool = {
   name: "Typescript",
-  icon: faToolbox,
+  icon: faScrewdriverWrench,
 };
 
 export const ReactTool = {
@@ -38,12 +38,12 @@ export const AngularTool = {
 
 export const NgRxTool = {
   name: "NgRx",
-  icon: faToolbox,
+  icon: faScrewdriverWrench,
 };
 
 export const ReduxTool = {
   name: "Redux",
-  icon: faToolbox,
+  icon: faScrewdriverWrench,
 };
 
 export const SendBirdTool = {
@@ -103,22 +103,22 @@ export const CustomStylingTool = {
 
 export const AxiosTool = {
   name: "Axios",
-  icon: faNetworkWired,
+  icon: faWifi,
 };
 
 export const ApolloClient = {
   name: "Apollo Client",
-  icon: faNetworkWired,
+  icon: faWifi,
 };
 
 export const RESTTool = {
   name: "REST",
-  icon: faNetworkWired,
+  icon: faWifi,
 };
 
 export const GraphQL = {
   name: "GraphQL",
-  icon: faNetworkWired,
+  icon: faWifi,
 };
 
 export const FigmaTool = {
