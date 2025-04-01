@@ -78,6 +78,11 @@ export const MaterialUITool = {
   icon: faPenNib,
 };
 
+export const AngularMaterialTool = {
+  name: "MaterialUI",
+  icon: faPenNib,
+};
+
 export const StyledComponentsTool = {
   name: "Styled Compoents",
   icon: faPenNib,

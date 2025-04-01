@@ -1,6 +1,7 @@
 import { IProject } from "@/features/project/api/type";
 
 import {
+  AngularMaterialTool,
   AngularTool,
   AntDTool,
   CustomStylingTool,
@@ -96,6 +97,7 @@ export const StacksProps = {
     ReduxTool,
     AngularTool,
     NgRxTool,
+    AngularMaterialTool,
     SendBirdTool,
     FormikTool,
     YupTool,
