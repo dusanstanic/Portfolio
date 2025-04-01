@@ -19,7 +19,7 @@ export const Project = () => {
   );
 
   return (
-    <main className={classes.container}>
+    <div className={classes.container}>
       <section>
         <h1>{title}</h1>
       </section>
@@ -41,6 +41,6 @@ export const Project = () => {
       <section>
         <Pills pills={tools} />
       </section>
-    </main>
+    </div>
   );
 };
