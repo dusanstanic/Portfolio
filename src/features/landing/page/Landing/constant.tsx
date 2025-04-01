@@ -7,7 +7,9 @@ import {
   AngularTool,
   AntDTool,
   ApolloClient,
+  AWSTool,
   AxiosTool,
+  AzureTool,
   FigmaTool,
   FormikTool,
   GithubTool,
@@ -76,6 +78,8 @@ export const StacksProps = {
     FigmaTool,
     GithubTool,
     JiraTool,
+    AWSTool,
+    AzureTool,
   ],
 };
 
