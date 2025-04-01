@@ -17,7 +17,7 @@ export const SayHello = ({ email, socialLinks, text }: ISayHelloProps) => {
       <Socials socialLinks={socialLinks} />
       <div className={classes.subContainer}>
         <p className={classes.description}>{text}</p>
-        <ContactMe email={email} />
+        <ContactMe email={email} text="Drop a message" />
       </div>
     </div>
   );

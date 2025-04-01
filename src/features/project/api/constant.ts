@@ -21,13 +21,22 @@ export const PROJECTS = [
     title: "Vanilla",
     description:
       "Platform used to build a Document Generation product, enabling admins to create and publish document packages that can be purchased by an end client",
-    keyPoints: [],
+    keyPoints: [
+      `<b>Implemented and integrated onlyOffice</b> which helped users work on their documentation in a seamless way`,
+      `<b>Designed and presented extensive sets of data</b>, improving user experience in accessing and manipulating files`,
+      `<b>Created most designs in Figma for various flows</b> based on complexity and needs, greatly improving the project and sprint execution`,
+      `<b>Worked on implementing and integrating complex forms</b>, which resulted in an effortless experience for users handling their documentation`,
+    ],
     tools: VanillaTools,
   },
   {
     id: "3",
     title: "SchoolGig",
-    keyPoints: [],
+    keyPoints: [
+      `<b>Worked simultaneously on two projects</b> that consisted of the Admin Panel which used React and the Jammcard Web App which used Angular`,
+      `<b>Led a team</b> on creating and implementing a reusable wizard`,
+      `Implemented <b>authentication with JWT</b>; maintained and enhanced the messenger system`,
+    ],
     description:
       "Platform used by schools to better engage with their employees and to provide job offers, helping them in choosing the right candidate",
     tools: SchoolGigTools,
@@ -35,7 +44,10 @@ export const PROJECTS = [
   {
     id: "4",
     title: "LCI",
-    keyPoints: [],
+    keyPoints: [
+      `<b>Designed, developed and architectured the entire FE of the project; worked closely with stakeholders</b>`,
+      `<b>Architectured</b> a dynamic wizard with complex forms for various configurations with steps that were interchangeable and configurable; Implemented and integrated <b>SSO</b>`,
+    ],
     description:
       "Platform for the entire suite of LCI products and their associated systems. This transformation involves the utilization of cloud-based solutions that can easily be expanded and seamlessly integrated, ensuring the delivery of secure and scalable services to clients.",
     tools: LCITools,

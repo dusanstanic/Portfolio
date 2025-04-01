@@ -16,7 +16,7 @@ import {
 
 export const Landing = () => {
   return (
-    <div className={classes.conatainer}>
+    <div className={classes.container}>
       <Hero {...HeroProps} />
       <Projects {...ProjectProps} />
       <AboutMe {...AboutMeProps} />

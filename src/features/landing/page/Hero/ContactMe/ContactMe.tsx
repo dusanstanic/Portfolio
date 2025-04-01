@@ -4,9 +4,10 @@ import classes from "./ContactMe.module.scss";
 
 interface IContactMeProps {
   email: string;
+  text?: string;
 }
 
-export const ContactMe = ({ email }: IContactMeProps) => {
+export const ContactMe = ({ email, text }: IContactMeProps) => {
   return (
     <div className={classes.contact}>
       <div className={classes.contactMe}>
@@ -16,7 +17,7 @@ export const ContactMe = ({ email }: IContactMeProps) => {
             window.location.href = `mailto:${email}?subject=Subject&body=Hello Dusan`;
           }}
         >
-          Contact Me
+          {text ? text : "Contact Me"}
         </Button>
       </div>
     </div>

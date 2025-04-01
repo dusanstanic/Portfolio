@@ -17,7 +17,7 @@ export const Card = ({ id, title, description, tools }: IProject) => {
     <div className={classes.card}>
       <h4>{title}</h4>
       <p className={classes.description}>{description}</p>
-      <Pills pills={tools} />
+      <Pills pills={tools} displayCount={4} />
       <Button
         size="large"
         isAnimated={false}
