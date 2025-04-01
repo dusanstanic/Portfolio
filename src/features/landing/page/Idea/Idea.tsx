@@ -1,17 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
+import { ISayHiProps, SayHi } from "@/features/landing/page/Hero/SayHi/SayHi";
+
 import classes from "./Idea.module.scss";
 
-export const Idea = () => {
+interface IIdeaProps extends ISayHiProps {
+  title?: string;
+  subTitle?: string;
+}
+
+export const Idea = ({
+  title = "Got an idea?",
+  subTitle = "Share with me",
+  ...props
+}: IIdeaProps) => {
   return (
     <div className={classes.container}>
-      <div>
+      <div className={classes.headingContainer}>
         <h2>
-          <FontAwesomeIcon icon={faEnvelope} /> Got an idea? Share with me
+          <div className={classes.iconContainer}>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </div>
+          {title}
         </h2>
+        <h2>{subTitle}</h2>
       </div>
-      <div>d</div>
+      <SayHi {...props} />
     </div>
   );
 };

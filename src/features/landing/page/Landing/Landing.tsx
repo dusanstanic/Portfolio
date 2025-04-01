@@ -10,6 +10,7 @@ import {
   ProjectProps,
   AboutMeProps,
   StacksProps,
+  IdeaProps,
 } from "./constant.tsx";
 
 import classes from "./Landing.module.scss";
@@ -23,7 +24,7 @@ export const Landing = () => {
         <Projects {...ProjectProps} />
         <AboutMe {...AboutMeProps} />
         <Tools {...StacksProps} />
-        <Idea />
+        <Idea {...IdeaProps} />
       </main>
     </div>
   );

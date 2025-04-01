@@ -127,3 +127,9 @@ export const StacksProps = {
     JiraTool,
   ],
 };
+
+export const IdeaProps = {
+  text: "Ready for a developing journey, or need development advice? Ping me for fun collaboration",
+  socialLinks: HeroProps.socialLinks,
+  email: HeroProps.email,
+};

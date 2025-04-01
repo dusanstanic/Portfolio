@@ -1,4 +1,13 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: calc(5 * var(--gap));
+
+  @include desktop {
+    gap: calc(1 * var(--gap));
+  }
+}
+
+.iconContainer {
+  display: inline-block;
+  margin-right: calc(3 * var(--margin));
 }
