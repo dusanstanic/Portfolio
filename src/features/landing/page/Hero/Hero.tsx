@@ -2,11 +2,11 @@ import { TextAnimated } from "@/components/animation/TextAnimated/TextAnimated";
 
 import image from "@/assets/DusanStanic.jpg";
 
-import { ISayHiProps, SayHi } from "./SayHi/SayHi";
+import { SayHello, ISayHelloProps } from "./SayHello/SayHello";
 
 import classes from "./Hero.module.scss";
 
-interface IHeroProps extends ISayHiProps {
+interface IHeroProps extends ISayHelloProps {
   title: Array<string>;
 }
 
@@ -21,7 +21,7 @@ export const Hero = ({ title, ...props }: IHeroProps) => {
       <div className={classes.imageWrapper}>
         <img alt="User Image" src={image} />
       </div>
-      <SayHi {...props} />
+      <SayHello {...props} />
     </div>
   );
 };

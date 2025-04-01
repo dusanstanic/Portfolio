@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(2 * var(--gap));
+  margin-top: calc(3 * var(--margin));
+
+  @include desktop {
+    flex-direction: column;
+    align-items: start;
+    gap: calc(6 * var(--gap));
+  }
+}
+
+.subContainer {
+  display: flex;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  max-width: 400px;
+}

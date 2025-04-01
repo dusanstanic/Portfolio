@@ -129,7 +129,7 @@ export const StacksProps = {
 };
 
 export const IdeaProps = {
-  text: "Ready for a developing journey, or need development advice? Ping me for fun collaboration",
+  text: "Ready for a development journey, or need development advice? Ping me for fun collaboration",
   socialLinks: HeroProps.socialLinks,
   email: HeroProps.email,
 };

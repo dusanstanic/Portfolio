@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import { ISayHiProps, SayHi } from "@/features/landing/page/Hero/SayHi/SayHi";
+import { SayHello, ISayHelloProps } from "./SayHello/SayHello";
 
 import classes from "./Idea.module.scss";
 
-interface IIdeaProps extends ISayHiProps {
+interface IIdeaProps extends ISayHelloProps {
   title?: string;
   subTitle?: string;
 }
@@ -26,7 +26,7 @@ export const Idea = ({
         </h2>
         <h2>{subTitle}</h2>
       </div>
-      <SayHi {...props} />
+      <SayHello {...props} />
     </div>
   );
 };
