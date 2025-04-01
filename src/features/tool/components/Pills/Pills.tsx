@@ -15,7 +15,7 @@ export const Pills = ({ pills }: IPillsProps) => {
     <div className={classes.tools}>
       {pills
         .map(({ name, icon }) => (
-          <Button size="small">
+          <Button size="small" style={{ cursor: "auto" }}>
             <div className={classes.tool}>
               {name}
               <FontAwesomeIcon icon={icon} />
