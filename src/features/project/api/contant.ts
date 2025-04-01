@@ -82,6 +82,21 @@ const SchoolGigTools = [
   GithubTool,
 ];
 
+const LCITools = [
+  JavascriptTool,
+  TypescriptTool,
+  ReactTool,
+  TanstackQueryTool,
+  ReactHookFormTool,
+  ZodTool,
+  MaterialUITool,
+  TailWindCSSTool,
+  ReactTestingLibrary,
+  Jest,
+  FigmaTool,
+  GithubTool,
+];
+
 export const PROJECTS = [
   {
     id: 1,
@@ -113,19 +128,6 @@ export const PROJECTS = [
     keyPoints: [],
     description:
       "Platform for the entire suite of LCI products and their associated systems. This transformation involves the utilization of cloud-based solutions that can easily be expanded and seamlessly integrated, ensuring the delivery of secure and scalable services to clients.",
-    tools: [
-      JavascriptTool,
-      TypescriptTool,
-      ReactTool,
-      TanstackQueryTool,
-      ReactHookFormTool,
-      ZodTool,
-      MaterialUITool,
-      TailWindCSSTool,
-      ReactTestingLibrary,
-      Jest,
-      FigmaTool,
-      GithubTool,
-    ],
+    tools: LCITools,
   },
 ];
