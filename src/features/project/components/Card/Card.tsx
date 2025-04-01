@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router";
 
+import { ROUTES } from "@/routes/routes";
+
 import { Button } from "@/components/Button/Button";
 
 import { IProject } from "@/features/project/api/type";
@@ -7,7 +9,6 @@ import { IProject } from "@/features/project/api/type";
 import { Pills } from "@/features/tool/components/Pills/Pills";
 
 import classes from "./Card.module.scss";
-import { ROUTES } from "@/routes/routes";
 
 export const Card = ({ id, title, description, tools }: IProject) => {
   const navigate = useNavigate();

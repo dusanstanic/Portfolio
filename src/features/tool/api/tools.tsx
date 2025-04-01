@@ -6,6 +6,7 @@ import {
   faJs,
   faJira,
   faMicrosoft,
+  faAws,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faWifi,
@@ -129,13 +130,13 @@ export const GraphQL = {
   icon: faWifi,
 };
 
-export const ReactTestingLibrary = {
+export const ReactTestingLibraryTool = {
   name: "React Testing Library",
   icon: faVial,
 };
 
-export const Jest = {
-  name: "Jest",
+export const JestTool = {
+  name: "JestTool",
   icon: faVial,
 };
 
@@ -157,4 +158,9 @@ export const JiraTool = {
 export const AzureTool = {
   name: "Azure",
   icon: faMicrosoft,
+};
+
+export const AWSTool = {
+  name: "AWS",
+  icon: faAws,
 };

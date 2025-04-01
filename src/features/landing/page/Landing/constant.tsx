@@ -1,4 +1,4 @@
-import { PROJECTS } from "@/features/project/api/contant";
+import { PROJECTS } from "@/features/project/api/constant";
 
 import { IProject } from "@/features/project/api/type";
 
@@ -13,12 +13,12 @@ import {
   GithubTool,
   GraphQL,
   JavascriptTool,
-  Jest,
+  JestTool,
   JiraTool,
   MaterialUITool,
   NgRxTool,
   ReactHookFormTool,
-  ReactTestingLibrary,
+  ReactTestingLibraryTool,
   ReactTool,
   ReduxTool,
   RESTTool,
@@ -54,7 +54,7 @@ export const StacksProps = {
     TypescriptTool,
     ReactTool,
     ReduxTool,
-    ReactTestingLibrary,
+    ReactTestingLibraryTool,
     AngularTool,
     NgRxTool,
     AngularMaterialTool,
@@ -72,7 +72,7 @@ export const StacksProps = {
     ApolloClient,
     RESTTool,
     GraphQL,
-    Jest,
+    JestTool,
     FigmaTool,
     GithubTool,
     JiraTool,

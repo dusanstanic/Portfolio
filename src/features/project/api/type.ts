@@ -1,7 +1,7 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export interface IProject {
-  id: number;
+  id: string;
   title: string;
   description: string;
   keyPoints: Array<string>;

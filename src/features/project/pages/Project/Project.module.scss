@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  gap: calc(4 * var(--gap));
+}
+
+.description {
+  max-width: 65rem;
+  font-size: 1.5rem;
+}
+
+.list {
+  display: grid;
+  gap: calc(2 * var(--gap));
+}
+
+.keyPoint {
+  max-width: 55rem;
+}
