@@ -10,12 +10,14 @@ interface IMainProps {
 
 export const Main = ({ tools }: IMainProps) => {
   return (
-    <div>
-      <h4 className={classes.heading}>My Stacks</h4>
-      <p>
-        Commitment to staying updated with the lastest software trends and
-        techniques
-      </p>
+    <div className={classes.container}>
+      <div>
+        <h4 className={classes.heading}>My Stacks</h4>
+        <p>
+          Commitment to staying updated with the lastest software trends and
+          techniques
+        </p>
+      </div>
       <div className={classes.tools}>
         {tools.map((tool) => (
           <Card {...tool} />

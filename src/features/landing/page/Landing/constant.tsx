@@ -14,6 +14,7 @@ import {
   ReduxTool,
   SendBirdTool,
   StyledComponentsTool,
+  TailWindCSSTool,
   TypescriptTool,
   YupTool,
   ZodTool,
@@ -87,5 +88,22 @@ export const AboutMeProps = {
 };
 
 export const StacksProps = {
-  tools: [JavascriptTool, TypescriptTool, ReactTool, ReduxTool],
+  tools: [
+    JavascriptTool,
+    TypescriptTool,
+    ReactTool,
+    ReduxTool,
+    AngularTool,
+    SendBirdTool,
+    FormikTool,
+    YupTool,
+    ReactHookFormTool,
+    ZodTool,
+    AntDTool,
+    MaterialUITool,
+    TailWindCSSTool,
+    StyledComponentsTool,
+    FigmaTool,
+    GithubTool,
+  ],
 };

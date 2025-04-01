@@ -33,6 +33,11 @@ export const AngularTool = {
   icon: faAngular,
 };
 
+export const NgRxTool = {
+  name: "NgRx",
+  icon: faToolbox,
+};
+
 export const ReduxTool = {
   name: "Redux",
   icon: faToolbox,
@@ -75,6 +80,11 @@ export const MaterialUITool = {
 
 export const StyledComponentsTool = {
   name: "Styled Compoents",
+  icon: faPenNib,
+};
+
+export const TailWindCSSTool = {
+  name: "TailWindCSS",
   icon: faPenNib,
 };
 

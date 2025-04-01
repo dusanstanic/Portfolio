@@ -11,7 +11,7 @@ export const Card = ({ icon, name, description }: ITool) => {
         <FontAwesomeIcon icon={icon} fontSize={"2.5rem"} />
       </div>
       <div>
-        <span>{name}</span>
+        <span className={classes.name}>{name}</span>
         <p>{description}</p>
       </div>
     </div>
