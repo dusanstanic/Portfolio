@@ -8,7 +8,7 @@ export const Card = ({ icon, name, description }: ITool) => {
   return (
     <div className={classes.card}>
       <div>
-        <FontAwesomeIcon icon={icon} fontSize={"2.5rem"} />
+        <FontAwesomeIcon icon={icon} fontSize={"2rem"} fontWeight={100} />
       </div>
       <div>
         <span className={classes.name}>{name}</span>

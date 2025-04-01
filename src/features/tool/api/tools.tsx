@@ -6,12 +6,15 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCheck,
-  faFileLines,
-  faMessage,
-  faPenNib,
+  faNetworkWired,
+  faBrush,
   faToolbox,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFileLines,
+  faMessage,
+  faCircleCheck,
+} from "@fortawesome/free-regular-svg-icons";
 
 export const JavascriptTool = {
   name: "Javascript",
@@ -60,42 +63,62 @@ export const ReactHookFormTool = {
 
 export const ZodTool = {
   name: "Zod",
-  icon: faCheck,
+  icon: faCircleCheck,
 };
 
 export const YupTool = {
   name: "Yup",
-  icon: faCheck,
+  icon: faCircleCheck,
 };
 
 export const AntDTool = {
   name: "AntD",
-  icon: faPenNib,
+  icon: faBrush,
 };
 
 export const MaterialUITool = {
   name: "MaterialUI",
-  icon: faPenNib,
+  icon: faBrush,
 };
 
 export const AngularMaterialTool = {
-  name: "MaterialUI",
-  icon: faPenNib,
+  name: "Angular Material",
+  icon: faBrush,
 };
 
 export const StyledComponentsTool = {
   name: "Styled Compoents",
-  icon: faPenNib,
+  icon: faBrush,
 };
 
 export const TailWindCSSTool = {
   name: "TailWindCSS",
-  icon: faPenNib,
+  icon: faBrush,
 };
 
 export const CustomStylingTool = {
   name: "Custom Styling",
-  icon: faPenNib,
+  icon: faBrush,
+};
+
+export const AxiosTool = {
+  name: "Axios",
+  icon: faNetworkWired,
+};
+
+export const ApolloClient = {
+  name: "Apollo Client",
+  icon: faNetworkWired,
+};
+
+export const RESTTool = {
+  name: "REST",
+  icon: faNetworkWired,
+};
+
+export const GraphQL = {
+  name: "GraphQL",
+  icon: faNetworkWired,
 };
 
 export const FigmaTool = {
