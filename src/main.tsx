@@ -7,7 +7,6 @@ import { BrowserRouter } from "react-router";
 import { App } from "./App.tsx";
 
 import "@/styles/variables.scss";
-import "@/styles/theme.scss";
 
 import "./styles/global.scss";
 

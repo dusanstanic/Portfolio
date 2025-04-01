@@ -10,10 +10,27 @@
   --black: #000000;
   --white: #ffffff;
   --black-100: #1c1b1b;
+  --white-100: #faf7f7;
   --padding: 0.5rem;
   --margin: 1rem;
   --gap: 0.5rem;
   --container-width: 1280px;
   --padding-main: calc(2 * var(--padding));
   --navgiation-height: 54px;
+}
+
+[data-theme="light"] {
+  --bg-color: var(--white);
+  --bg-color-100: var(--white-100);
+  --text-color: var(--black);
+  --button-default-bg-color: var(--black);
+  --button-default-text-color: var(--white);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--black);
+  --bg-color-100: var(--black-100);
+  --text-color: var(--white);
+  --button-default-bg-color: var(--white);
+  --button-default-text-color: var(--black);
 }
