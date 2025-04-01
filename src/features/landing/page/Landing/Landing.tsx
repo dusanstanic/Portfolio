@@ -4,6 +4,8 @@ import { Main as Tools } from "@/features/tool/pages/Main/Main.tsx";
 import { AboutMe } from "../AboutMe/AboutMe.tsx";
 import { Idea } from "../Idea/Idea.tsx";
 
+import classes from "./Landing.module.scss";
+
 import {
   HeroProps,
   ProjectProps,
@@ -14,12 +16,12 @@ import {
 
 export const Landing = () => {
   return (
-    <>
+    <div className={classes.conatainer}>
       <Hero {...HeroProps} />
       <Projects {...ProjectProps} />
       <AboutMe {...AboutMeProps} />
       <Tools {...StacksProps} />
       <Idea {...IdeaProps} />
-    </>
+    </div>
   );
 };
