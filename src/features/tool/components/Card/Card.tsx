@@ -6,12 +6,12 @@ import classes from "./Card.module.scss";
 
 export const Card = ({ icon, name, description }: ITool) => {
   return (
-    <div className={classes.tool}>
+    <div className={classes.card}>
       <div>
         <FontAwesomeIcon icon={icon} fontSize={"2.5rem"} />
       </div>
       <div>
-        <h6>{name}</h6>
+        <span>{name}</span>
         <p>{description}</p>
       </div>
     </div>
