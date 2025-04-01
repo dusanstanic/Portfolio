@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import { useNavigate } from "react-router";
 
 import { ROUTES } from "@/routes/routes";
@@ -19,11 +22,13 @@ export const Card = ({ id, title, description, tools }: IProject) => {
       <p className={classes.description}>{description}</p>
       <Pills pills={tools} displayCount={4} />
       <Button
-        size="large"
         isAnimated={false}
         onClick={() => navigate(ROUTES.projectId.replace(":id", id.toString()))}
       >
-        Details
+        <div className={classes.buttonContent}>
+          <span>Details</span>
+          <FontAwesomeIcon icon={faArrowRight} />
+        </div>
       </Button>
     </div>
   );

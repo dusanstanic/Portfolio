@@ -2,3 +2,9 @@
   display: grid;
   gap: calc(3 * var(--gap));
 }
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  gap: calc(1 * var(--gap));
+}
