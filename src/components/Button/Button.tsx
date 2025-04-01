@@ -10,6 +10,7 @@ interface IButtonProps extends HTMLMotionProps<"button"> {
   variant?: vairant;
   rounded?: boolean;
   size?: size;
+  isAnimated?: boolean;
 }
 
 export const Button = ({
@@ -18,6 +19,7 @@ export const Button = ({
   rounded = true,
   size = "small",
   className,
+  isAnimated = true,
   ...props
 }: IButtonProps) => {
   return (
@@ -25,7 +27,13 @@ export const Button = ({
       <motion.button
         whileTap={{ scale: 0.85 }}
         whileHover={{ scale: 1.05 }}
-        className={getClassName({ variant, className, rounded, size })}
+        className={getClassName({
+          variant,
+          className,
+          rounded,
+          size,
+          isAnimated,
+        })}
         {...props}
       >
         {children}

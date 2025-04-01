@@ -12,7 +12,9 @@ export const Card = ({ title, description, tools }: IProject) => {
       <h4>{title}</h4>
       <p className={classes.description}>{description}</p>
       <Pills pills={tools} />
-      <Button>Details</Button>
+      <Button size="large" isAnimated={false}>
+        Details
+      </Button>
     </div>
   );
 };

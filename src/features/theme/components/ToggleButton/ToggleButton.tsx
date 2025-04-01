@@ -13,7 +13,7 @@ export const ToggleButton = () => {
 
   return (
     <div className={classes.container}>
-      <Button onClick={toggleTheme}>
+      <Button onClick={toggleTheme} isAnimated={false}>
         {darkMode ? (
           <FontAwesomeIcon icon={faSun} />
         ) : (
