@@ -1,0 +1,8 @@
+.tool {
+  background-color: var(--bg-color-100);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: calc(2 * var(--gap));
+  row-gap: calc(2 * var(--gap));
+  padding: 1rem;
+}

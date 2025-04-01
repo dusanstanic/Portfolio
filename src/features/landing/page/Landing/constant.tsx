@@ -7,15 +7,17 @@ import {
   FigmaTool,
   FormikTool,
   GithubTool,
+  JavascriptTool,
   MaterialUITool,
   ReactHookFormTool,
   ReactTool,
   ReduxTool,
   SendBirdTool,
   StyledComponentsTool,
+  TypescriptTool,
   YupTool,
   ZodTool,
-} from "./tools";
+} from "@/features/tool/api/tools";
 
 export const HeroProps = {
   title: ["Software", "Engineer", "Expert"],
@@ -82,4 +84,8 @@ export const AboutMeProps = {
   title:
     "Hello! I am Dusan, a dedicated and creative software engineer with a passion for shaping the digital world.",
   text: "I specialize in developing scalable and robust software architectures emphasizing reusability and maintainability, boosting team productivity and reduced bug occurrences",
+};
+
+export const StacksProps = {
+  tools: [JavascriptTool, TypescriptTool, ReactTool, ReduxTool],
 };

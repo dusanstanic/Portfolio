@@ -9,7 +9,7 @@ import { App } from "./App.tsx";
 import "@/styles/variables.scss";
 import "@/styles/theme.scss";
 
-import "./index.scss";
+import "./styles/global.scss";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -1,7 +1,8 @@
 import { Button } from "@/components/Button/Button";
 
 import { IProject } from "@/features/project/api/type";
-import { Tools } from "./Tools/Tools";
+
+import { Pills } from "@/features/tool/components/Pills/Pills";
 
 import classes from "./Card.module.scss";
 
@@ -10,7 +11,7 @@ export const Card = ({ title, description, tools }: IProject) => {
     <div className={classes.card}>
       <h4>{title}</h4>
       <p className={classes.description}>{description}</p>
-      <Tools tools={tools} />
+      <Pills pills={tools} />
       <Button>Details</Button>
     </div>
   );

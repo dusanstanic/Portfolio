@@ -1,8 +1,9 @@
-import { ReactElement } from "react";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export interface ITool {
   name: string;
-  Icon: ReactElement;
+  description?: string;
+  icon: IconDefinition;
 }
 
 export interface IProject {

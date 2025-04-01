@@ -1,14 +1,14 @@
 import { IProject } from "@/features/project/api/type";
 
-import { Cards } from "./Cards/Cards";
+import { Cards } from "@/features/project/components/Cards/Cards";
 
-import classes from "./Projects.module.scss";
+import classes from "./Main.module.scss";
 
 interface IProjectProps {
   projects: Array<IProject>;
 }
 
-export const Projects = (props: IProjectProps) => {
+export const Main = (props: IProjectProps) => {
   return (
     <div id="projects">
       <h2>Projects</h2>

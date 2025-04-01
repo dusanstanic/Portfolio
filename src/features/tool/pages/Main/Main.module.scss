@@ -1,0 +1,11 @@
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: calc(2 * var(--gap));
+  row-gap: calc(2 * var(--gap));
+
+  //   @include desktop {
+  //     grid-template-columns: 1fr;
+  //     gap: calc(8 * var(--gap));
+  //   }
+}

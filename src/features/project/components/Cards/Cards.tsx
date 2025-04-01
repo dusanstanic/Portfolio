@@ -1,6 +1,6 @@
 import { IProject } from "@/features/project/api/type";
 
-import { Card } from "./Card/Card";
+import { Card } from "../Card/Card";
 
 import classes from "./Cards.module.scss";
 

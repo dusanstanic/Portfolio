@@ -1,22 +1,24 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Button } from "@/components/Button/Button";
 
 import { ITool } from "@/features/project/api/type";
 
-import classes from "./Tools.module.scss";
+import classes from "./Pills.module.scss";
 
-interface IToolsProps {
-  tools: Array<ITool>;
+interface IPillsProps {
+  pills: Array<ITool>;
 }
 
-export const Tools = ({ tools }: IToolsProps) => {
+export const Pills = ({ pills }: IPillsProps) => {
   return (
     <div className={classes.tools}>
-      {tools
-        .map(({ name, Icon }) => (
+      {pills
+        .map(({ name, icon }) => (
           <Button size="small">
             <div className={classes.tool}>
               {name}
-              {Icon}
+              <FontAwesomeIcon icon={icon} />
             </div>
           </Button>
         ))

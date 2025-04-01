@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faReact,
   faAngular,
   faFigma,
   faGithub,
+  faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faCheck,
@@ -14,72 +13,82 @@ import {
   faToolbox,
 } from "@fortawesome/free-solid-svg-icons";
 
+export const JavascriptTool = {
+  name: "Javascript",
+  icon: faJs,
+};
+
+export const TypescriptTool = {
+  name: "Typescript",
+  icon: faToolbox,
+};
+
 export const ReactTool = {
   name: "React",
-  Icon: <FontAwesomeIcon icon={faReact} />,
+  icon: faReact,
 };
 
 export const AngularTool = {
   name: "Angular",
-  Icon: <FontAwesomeIcon icon={faAngular} />,
+  icon: faAngular,
 };
 
 export const ReduxTool = {
   name: "Redux",
-  Icon: <FontAwesomeIcon icon={faToolbox} />,
+  icon: faToolbox,
 };
 
 export const SendBirdTool = {
   name: "SendBird",
-  Icon: <FontAwesomeIcon icon={faMessage} />,
+  icon: faMessage,
 };
 
 export const FormikTool = {
   name: "Formik",
-  Icon: <FontAwesomeIcon icon={faFileLines} />,
+  icon: faFileLines,
 };
 
 export const ReactHookFormTool = {
   name: "React Hook Form",
-  Icon: <FontAwesomeIcon icon={faFileLines} />,
+  icon: faFileLines,
 };
 
 export const ZodTool = {
   name: "Zod",
-  Icon: <FontAwesomeIcon icon={faCheck} />,
+  icon: faCheck,
 };
 
 export const YupTool = {
   name: "Yup",
-  Icon: <FontAwesomeIcon icon={faCheck} />,
+  icon: faCheck,
 };
 
 export const AntDTool = {
   name: "AntD",
-  Icon: <FontAwesomeIcon icon={faPenNib} />,
+  icon: faPenNib,
 };
 
 export const MaterialUITool = {
   name: "MaterialUI",
-  Icon: <FontAwesomeIcon icon={faPenNib} />,
+  icon: faPenNib,
 };
 
 export const StyledComponentsTool = {
   name: "Styled Compoents",
-  Icon: <FontAwesomeIcon icon={faPenNib} />,
+  icon: faPenNib,
 };
 
 export const CustomStylingTool = {
   name: "Custom Styling",
-  Icon: <FontAwesomeIcon icon={faPenNib} />,
+  icon: faPenNib,
 };
 
 export const FigmaTool = {
   name: "Figma",
-  Icon: <FontAwesomeIcon icon={faFigma} />,
+  icon: faFigma,
 };
 
 export const GithubTool = {
   name: "Github",
-  Icon: <FontAwesomeIcon icon={faGithub} />,
+  icon: faGithub,
 };

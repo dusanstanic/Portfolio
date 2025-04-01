@@ -7,8 +7,6 @@ interface IAboutMeProps {
   text: string;
 }
 
-console.log(classes);
-
 export const AboutMe = ({ title, text }: IAboutMeProps) => {
   return (
     <div className={classes.aboutMe} id="aboutMe">
