@@ -4,6 +4,7 @@ import {
   AntDTool,
   ApolloClient,
   AxiosTool,
+  AzureTool,
   CustomStylingTool,
   FigmaTool,
   FormikTool,
@@ -28,6 +29,59 @@ import {
   ZodTool,
 } from "@/features/tool/api/tools";
 
+const HiveTools = [
+  JavascriptTool,
+  TypescriptTool,
+  ReactTool,
+  ReduxTool,
+  SendBirdTool,
+  FormikTool,
+  YupTool,
+  StyledComponentsTool,
+  AntDTool,
+  AxiosTool,
+  ApolloClient,
+  GraphQL,
+  ReactTestingLibrary,
+  Jest,
+  FigmaTool,
+  AzureTool,
+  JiraTool,
+];
+
+const VanillaTools = [
+  JavascriptTool,
+  TypescriptTool,
+  ReactTool,
+  ReduxTool,
+  FormikTool,
+  YupTool,
+  StyledComponentsTool,
+  CustomStylingTool,
+  AxiosTool,
+  ApolloClient,
+  GraphQL,
+  ReactTestingLibrary,
+  Jest,
+  FigmaTool,
+  GithubTool,
+];
+
+const SchoolGigTools = [
+  JavascriptTool,
+  TypescriptTool,
+  ReactTool,
+  ReduxTool,
+  AngularTool,
+  NgRxTool,
+  AngularMaterialTool,
+  RESTTool,
+  ReactTestingLibrary,
+  Jest,
+  FigmaTool,
+  GithubTool,
+];
+
 export const PROJECTS = [
   {
     id: 1,
@@ -35,24 +89,7 @@ export const PROJECTS = [
     description:
       "Health Information Network created to manage misleading information that appears in public spaces during epidemics using machine learning",
     keyPoints: [],
-    tools: [
-      JavascriptTool,
-      TypescriptTool,
-      ReactTool,
-      ReduxTool,
-      SendBirdTool,
-      FormikTool,
-      YupTool,
-      StyledComponentsTool,
-      AntDTool,
-      AxiosTool,
-      ApolloClient,
-      GraphQL,
-      ReactTestingLibrary,
-      Jest,
-      FigmaTool,
-      JiraTool,
-    ],
+    tools: HiveTools,
   },
   {
     id: 2,
@@ -60,19 +97,7 @@ export const PROJECTS = [
     description:
       "Platform used to build a Document Generation product, enabling admins to create and publish document packages that can be purchased by an end client",
     keyPoints: [],
-    tools: [
-      JavascriptTool,
-      TypescriptTool,
-      ReactTool,
-      StyledComponentsTool,
-      CustomStylingTool,
-      AxiosTool,
-      RESTTool,
-      ReactTestingLibrary,
-      Jest,
-      FigmaTool,
-      GithubTool,
-    ],
+    tools: VanillaTools,
   },
   {
     id: 3,
@@ -80,17 +105,7 @@ export const PROJECTS = [
     keyPoints: [],
     description:
       "Platform used by schools to better engage with their employees and to provide job offers, helping them in choosing the right candidate",
-    tools: [
-      JavascriptTool,
-      TypescriptTool,
-      AngularTool,
-      NgRxTool,
-      ReactTool,
-      ReactTestingLibrary,
-      Jest,
-      FigmaTool,
-      GithubTool,
-    ],
+    tools: SchoolGigTools,
   },
   {
     id: 4,
@@ -106,6 +121,7 @@ export const PROJECTS = [
       ReactHookFormTool,
       ZodTool,
       MaterialUITool,
+      TailWindCSSTool,
       ReactTestingLibrary,
       Jest,
       FigmaTool,

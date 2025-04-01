@@ -5,6 +5,7 @@ import {
   faGithub,
   faJs,
   faJira,
+  faMicrosoft,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faWifi,
@@ -151,4 +152,9 @@ export const GithubTool = {
 export const JiraTool = {
   name: "Jira",
   icon: faJira,
+};
+
+export const AzureTool = {
+  name: "Azure",
+  icon: faMicrosoft,
 };
