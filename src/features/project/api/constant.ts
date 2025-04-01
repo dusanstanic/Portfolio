@@ -10,6 +10,9 @@ export const PROJECTS = [
       `<b>Led, architectured and implemented a messaging system infrastructure using SendBird</b>, which resulted in robust and reusable outcomes that can easily be extended and adapted to changes, improving overall project execution`,
       `<b>Integrated and implemented numerous different features for user chat communication</b> using clean architectural solutions that made reusability seamless`,
       `<b>Architectured and implemented a notification system infrastructure</b>, worked closely with the <b>product owner</b> on providing various possible solutions`,
+      `<b>Mentored team members</b> and supported with various tasks to reach sprint goals, improving productivity`,
+      `<b>Documented</b> various aspects of the project in confluence to convey ideas, facilitate discussions, and <b>present information effectively to diverse audiences</b> helping others gain insights and knowledge of the current processes
+`,
     ],
     tools: HiveTools,
   },

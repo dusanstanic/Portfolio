@@ -6,6 +6,7 @@ import { PROJECTS } from "@/features/project/api/constant";
 import { IProject } from "@/features/project/api/type";
 
 import classes from "./Project.module.scss";
+import { Pills } from "@/features/tool/components/Pills/Pills";
 
 const fetchProject = (id: string | undefined) => {
   return PROJECTS.find((project) => project.id === id) as IProject;
@@ -13,7 +14,9 @@ const fetchProject = (id: string | undefined) => {
 
 export const Project = () => {
   const { id } = useParams<{ id: string }>();
-  const [{ title, description, keyPoints }] = useState(() => fetchProject(id));
+  const [{ title, description, keyPoints, tools }] = useState(() =>
+    fetchProject(id)
+  );
 
   return (
     <main className={classes.container}>
@@ -34,6 +37,9 @@ export const Project = () => {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <Pills pills={tools} />
       </section>
     </main>
   );

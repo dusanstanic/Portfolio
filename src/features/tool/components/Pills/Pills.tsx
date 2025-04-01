@@ -8,9 +8,10 @@ import classes from "./Pills.module.scss";
 
 interface IPillsProps {
   pills: Array<ITool>;
+  displayCount?: number;
 }
 
-export const Pills = ({ pills }: IPillsProps) => {
+export const Pills = ({ pills, displayCount }: IPillsProps) => {
   return (
     <div className={classes.tools}>
       {pills
@@ -22,8 +23,8 @@ export const Pills = ({ pills }: IPillsProps) => {
             </div>
           </Button>
         ))
-        .slice(0, 4)}
-      <span>...</span>
+        .slice(0, displayCount ? displayCount : pills.length)}
+      {displayCount && <span>...</span>}
     </div>
   );
 };
