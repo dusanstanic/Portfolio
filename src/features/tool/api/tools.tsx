@@ -4,11 +4,13 @@ import {
   faFigma,
   faGithub,
   faJs,
+  faJira,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faWifi,
   faBrush,
   faScrewdriverWrench,
+  faVial,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFileLines,
@@ -101,6 +103,11 @@ export const CustomStylingTool = {
   icon: faBrush,
 };
 
+export const TanstackQueryTool = {
+  name: "Tanstack Query",
+  icon: faWifi,
+};
+
 export const AxiosTool = {
   name: "Axios",
   icon: faWifi,
@@ -121,6 +128,16 @@ export const GraphQL = {
   icon: faWifi,
 };
 
+export const ReactTestingLibrary = {
+  name: "React Testing Library",
+  icon: faVial,
+};
+
+export const Jest = {
+  name: "Jest",
+  icon: faVial,
+};
+
 export const FigmaTool = {
   name: "Figma",
   icon: faFigma,
@@ -129,4 +146,9 @@ export const FigmaTool = {
 export const GithubTool = {
   name: "Github",
   icon: faGithub,
+};
+
+export const JiraTool = {
+  name: "Jira",
+  icon: faJira,
 };
