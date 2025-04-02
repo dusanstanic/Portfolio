@@ -1,4 +1,5 @@
 .container {
   display: grid;
   gap: calc(25 * var(--gap));
+  padding-bottom: calc(25 * var(--padding));
 }
