@@ -1,10 +1,20 @@
+import { useEffect } from "react";
+
+import { useLocation, useNavigate } from "react-router";
+
+import { scrollIntoView } from "@/utils/scroll";
+
 import { Link } from "@/components/Link/Link";
 
 import classes from "./Navigation.module.scss";
-import { useNavigate } from "react-router";
 
 export const Navigation = () => {
   const navigate = useNavigate();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    scrollIntoView(hash);
+  }, [hash]);
 
   return (
     <div className={classes.container}>
@@ -14,6 +24,7 @@ export const Navigation = () => {
             <Link
               onClick={() => {
                 navigate("");
+                scrollIntoView("");
               }}
             >
               Home
@@ -25,6 +36,7 @@ export const Navigation = () => {
             <Link
               onClick={() => {
                 navigate({ pathname: "", hash: "projects" });
+                scrollIntoView("#projects");
               }}
             >
               Projects
@@ -34,6 +46,7 @@ export const Navigation = () => {
             <Link
               onClick={() => {
                 navigate({ pathname: "", hash: "aboutMe" });
+                scrollIntoView("#aboutMe");
               }}
             >
               About Me
@@ -42,7 +55,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate("");
+                // TO DO Take to shared file
               }}
             >
               Get CV
