@@ -24,7 +24,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate("/#projects");
+                navigate({ pathname: "", hash: "projects" });
               }}
             >
               Projects
@@ -33,7 +33,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate("/#aboutMe");
+                navigate({ pathname: "", hash: "aboutMe" });
               }}
             >
               About Me
@@ -42,7 +42,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate("/#getCV");
+                navigate("");
               }}
             >
               Get CV
