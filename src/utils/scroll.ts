@@ -4,3 +4,7 @@ export const scrollIntoView = (hash: string) => {
   const y = element.getBoundingClientRect().top + window.scrollY - 54;
   window.scrollTo({ top: y, behavior: "smooth" });
 };
+
+export const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};

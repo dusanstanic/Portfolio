@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { useLocation, useNavigate } from "react-router";
 
-import { scrollIntoView } from "@/utils/scroll";
+import { scrollIntoView, scrollToTop } from "@/utils/scroll";
 import { openInNewTab } from "@/utils/navigation";
 
 import { Link } from "@/components/Link/Link";
@@ -14,6 +14,10 @@ export const Navigation = () => {
   const { hash } = useLocation();
 
   useEffect(() => {
+    if (hash === "#home") {
+      return scrollToTop();
+    }
+
     scrollIntoView(hash);
   }, [hash]);
 
@@ -25,7 +29,7 @@ export const Navigation = () => {
             <Link
               onClick={() => {
                 navigate({ pathname: "", hash: "home" });
-                scrollIntoView("#home");
+                scrollToTop();
               }}
             >
               Home
