@@ -23,8 +23,8 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate("");
-                scrollIntoView("");
+                navigate({ pathname: "", hash: "home" });
+                scrollIntoView("#home");
               }}
             >
               Home

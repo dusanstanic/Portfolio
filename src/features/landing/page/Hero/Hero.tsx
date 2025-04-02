@@ -12,7 +12,7 @@ interface IHeroProps extends ISayHelloProps {
 
 export const Hero = ({ title, ...props }: IHeroProps) => {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="home">
       <div className={classes.title}>
         <h1 className={classes.heading}>
           <TextAnimated words={title}></TextAnimated>
