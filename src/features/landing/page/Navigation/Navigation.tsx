@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 
 import { scrollIntoView } from "@/utils/scroll";
+import { openInNewTab } from "@/utils/navigation";
 
 import { Link } from "@/components/Link/Link";
 
@@ -55,7 +56,9 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                // TO DO Take to shared file
+                openInNewTab(
+                  "https://drive.google.com/file/d/1UGKUgZ0kn-g-G_uGh6C3vPNkQQpjEw8_/view?usp=drive_link"
+                );
               }}
             >
               Get CV
