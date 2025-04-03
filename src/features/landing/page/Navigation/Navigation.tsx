@@ -11,15 +11,18 @@ import classes from "./Navigation.module.scss";
 
 export const Navigation = () => {
   const navigate = useNavigate();
-  const { hash } = useLocation();
+  const { hash: currentHash, pathname } = useLocation();
 
   useEffect(() => {
-    if (hash === "#home") {
-      return scrollToTop();
-    }
+    if (!currentHash) return;
 
-    scrollIntoView(hash);
-  }, [hash]);
+    scrollIntoView(currentHash);
+  }, [currentHash]);
+
+  const redirect = (hash: string) => {
+    if (pathname === "/" && currentHash.replace("#", "") === hash) return;
+    navigate({ pathname: "", hash });
+  };
 
   return (
     <div className={classes.container}>
@@ -28,7 +31,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate({ pathname: "", hash: "home" });
+                redirect("");
                 scrollToTop();
               }}
             >
@@ -40,7 +43,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate({ pathname: "", hash: "projects" });
+                redirect("projects");
                 scrollIntoView("#projects");
               }}
             >
@@ -50,7 +53,7 @@ export const Navigation = () => {
           <li>
             <Link
               onClick={() => {
-                navigate({ pathname: "", hash: "aboutMe" });
+                redirect("aboutMe");
                 scrollIntoView("#aboutMe");
               }}
             >
