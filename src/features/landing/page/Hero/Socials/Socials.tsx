@@ -14,11 +14,15 @@ export interface ISocialsProps {
 
 export const Socials = ({ socialLinks }: ISocialsProps) => {
   return (
-    <div className={classes.social}>
+    <div
+      className={classes.social}
+      onClick={() => openInNewTab(socialLinks.linkedInUrl)}
+      style={{ cursor: "pointer" }}
+    >
       <span>Say Hello</span>
       <ul className={classes.brands}>
         <li className={classes.iconWrapper}>
-          <Link onClick={() => openInNewTab(socialLinks.linkedInUrl)}>
+          <Link>
             <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
           </Link>
         </li>
