@@ -82,14 +82,14 @@ export const Navigation = () => {
   return (
     <div className={classes.container}>
       <nav className={classes.navigation}>{renderLinks()}</nav>
-      <menu
+      <div
         className={classes.burgerMenu}
         onClick={() => setIsMobileMenuOpen((prev) => !prev)}
       >
         <div className={classes.line}></div>
         <div className={classes.line}></div>
         <div className={classes.line}></div>
-      </menu>
+      </div>
       {isMobileMenuOpen && (
         <>
           <div
