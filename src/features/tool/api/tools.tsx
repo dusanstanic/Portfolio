@@ -177,7 +177,7 @@ export const ReactTestingLibraryTool = {
 };
 
 export const JestTool = {
-  name: "JestTool",
+  name: "Jest",
   icon: faVial,
 };
 
