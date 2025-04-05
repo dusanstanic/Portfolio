@@ -7,6 +7,9 @@ import {
   faJira,
   faMicrosoft,
   faAws,
+  faHtml5,
+  faCss,
+  faCss3,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faServer,
@@ -15,13 +18,33 @@ import {
   faVial,
   faTableColumns,
   faList,
-  faSquareBinary,
+  faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFileLines,
   faMessage,
   faCircleCheck,
 } from "@fortawesome/free-regular-svg-icons";
+
+export const HTMLTool = {
+  name: "HTML",
+  icon: faHtml5,
+};
+
+export const CSSTool = {
+  name: "CSS",
+  icon: faCss,
+};
+
+export const CSS3Tool = {
+  name: "CSS3",
+  icon: faCss3,
+};
+
+export const SCSSTool = {
+  name: "SCSS",
+  icon: faFileCode,
+};
 
 export const JavascriptTool = {
   name: "Javascript",
@@ -30,12 +53,12 @@ export const JavascriptTool = {
 
 export const TypescriptTool = {
   name: "Typescript",
-  icon: faSquareBinary,
+  icon: faFileCode,
 };
 
 export const NodeJSTool = {
   name: "NodeJS",
-  icon: faSquareBinary,
+  icon: faFileCode,
 };
 
 export const ReactTool = {

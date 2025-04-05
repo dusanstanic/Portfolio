@@ -10,10 +10,13 @@ import {
   AWSTool,
   AxiosTool,
   AzureTool,
+  CSS3Tool,
+  CSSTool,
   FigmaTool,
   FormikTool,
   GithubTool,
   GraphQL,
+  HTMLTool,
   JavascriptTool,
   JestTool,
   JiraTool,
@@ -26,6 +29,7 @@ import {
   ReactWindowTool,
   ReduxTool,
   RESTTool,
+  SCSSTool,
   SendBirdTool,
   StyledComponentsTool,
   TailWindCSSTool,
@@ -55,6 +59,10 @@ export const AboutMeProps = {
 
 export const StacksProps = {
   tools: [
+    HTMLTool,
+    CSSTool,
+    CSS3Tool,
+    SCSSTool,
     JavascriptTool,
     TypescriptTool,
     NodeJSTool,
