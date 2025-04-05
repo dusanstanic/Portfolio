@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { useLocation, useNavigate } from "react-router";
 
@@ -8,10 +8,13 @@ import { openInNewTab } from "@/utils/navigation";
 import { Link } from "@/components/Link/Link";
 
 import classes from "./Navigation.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export const Navigation = () => {
   const navigate = useNavigate();
   const { hash: currentHash, pathname } = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!currentHash) return;
@@ -24,9 +27,9 @@ export const Navigation = () => {
     navigate({ pathname: "", hash });
   };
 
-  return (
-    <div className={classes.container}>
-      <nav className={classes.navigation}>
+  const renderLinks = () => {
+    return (
+      <>
         <ul className={classes.list}>
           <li>
             <Link
@@ -72,7 +75,37 @@ export const Navigation = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </>
+    );
+  };
+
+  return (
+    <div className={classes.container}>
+      <nav className={classes.navigation}>{renderLinks()}</nav>
+      <menu
+        className={classes.burgerMenu}
+        onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+      >
+        <div className={classes.line}></div>
+        <div className={classes.line}></div>
+        <div className={classes.line}></div>
+      </menu>
+      {isMobileMenuOpen && (
+        <>
+          <div
+            className={classes.backdrop}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <nav className={`${classes.mobileNavigation}`}>{renderLinks()}</nav>
+            <div
+              className={classes.close}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <FontAwesomeIcon icon={faXmark} fontSize={"1.8rem"} />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
