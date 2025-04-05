@@ -13,7 +13,9 @@ import {
   faBrush,
   faScrewdriverWrench,
   faVial,
-  faToolbox,
+  faTableColumns,
+  faList,
+  faSquareBinary,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFileLines,
@@ -28,7 +30,12 @@ export const JavascriptTool = {
 
 export const TypescriptTool = {
   name: "Typescript",
-  icon: faScrewdriverWrench,
+  icon: faSquareBinary,
+};
+
+export const NodeJSTool = {
+  name: "NodeJS",
+  icon: faSquareBinary,
 };
 
 export const ReactTool = {
@@ -58,7 +65,12 @@ export const SendBirdTool = {
 
 export const TanstackTableTool = {
   name: "Tanstack Table",
-  icon: faToolbox,
+  icon: faTableColumns,
+};
+
+export const ReactWindowTool = {
+  name: "React Window",
+  icon: faList,
 };
 
 export const FormikTool = {
