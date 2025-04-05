@@ -9,10 +9,11 @@ import {
   faAws,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faWifi,
+  faServer,
   faBrush,
   faScrewdriverWrench,
   faVial,
+  faToolbox,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFileLines,
@@ -53,6 +54,11 @@ export const ReduxTool = {
 export const SendBirdTool = {
   name: "SendBird",
   icon: faMessage,
+};
+
+export const TanstackTableTool = {
+  name: "Tanstack Table",
+  icon: faToolbox,
 };
 
 export const FormikTool = {
@@ -107,27 +113,27 @@ export const CustomStylingTool = {
 
 export const TanstackQueryTool = {
   name: "Tanstack Query",
-  icon: faWifi,
+  icon: faServer,
 };
 
 export const AxiosTool = {
   name: "Axios",
-  icon: faWifi,
+  icon: faServer,
 };
 
 export const ApolloClient = {
   name: "Apollo Client",
-  icon: faWifi,
+  icon: faServer,
 };
 
 export const RESTTool = {
   name: "REST",
-  icon: faWifi,
+  icon: faServer,
 };
 
 export const GraphQL = {
   name: "GraphQL",
-  icon: faWifi,
+  icon: faServer,
 };
 
 export const ReactTestingLibraryTool = {
