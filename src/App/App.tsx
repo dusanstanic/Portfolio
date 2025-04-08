@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import { Route, Routes } from "react-router";
 
 import { ROUTES } from "@/routes/routes";
@@ -15,17 +17,20 @@ import classes from "./App.module.scss";
 
 export const App = () => {
   return (
-    <ThemeProvider>
-      <div className={classes.container}>
-        <Navigation />
-        <main className={classes.main}>
-          <Routes>
-            <Route index element={<Landing />} />
-            <Route path={ROUTES.projectId} element={<Project />} />
-          </Routes>
-        </main>
-        <ToggleButton />
-      </div>
-    </ThemeProvider>
+    <>
+      <Analytics />
+      <ThemeProvider>
+        <div className={classes.container}>
+          <Navigation />
+          <main className={classes.main}>
+            <Routes>
+              <Route index element={<Landing />} />
+              <Route path={ROUTES.projectId} element={<Project />} />
+            </Routes>
+          </main>
+          <ToggleButton />
+        </div>
+      </ThemeProvider>
+    </>
   );
 };
