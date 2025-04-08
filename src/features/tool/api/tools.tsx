@@ -132,7 +132,7 @@ export const AngularMaterialTool = {
 };
 
 export const StyledComponentsTool = {
-  name: "Styled Compoents",
+  name: "Styled Components",
   icon: faBrush,
 };
 

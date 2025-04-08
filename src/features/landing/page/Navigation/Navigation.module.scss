@@ -19,7 +19,7 @@
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 35px var(--padding-main);
-  height: var(--navgiation-height);
+  height: var(--navigation-height);
 
   @include mobile {
     display: none;

@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 
 import { useLocation, useNavigate } from "react-router";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import { scrollIntoView, scrollToTop } from "@/utils/scroll";
 import { openInNewTab } from "@/utils/navigation";
 
 import { Link } from "@/components/Link/Link";
 
 import classes from "./Navigation.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export const Navigation = () => {
   const navigate = useNavigate();

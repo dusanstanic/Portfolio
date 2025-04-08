@@ -6,7 +6,7 @@
 
 .main {
   margin: 0 auto;
-  padding-top: var(--navgiation-height);
+  padding-top: var(--navigation-height);
 
   @include desktop {
     max-width: 800px;
