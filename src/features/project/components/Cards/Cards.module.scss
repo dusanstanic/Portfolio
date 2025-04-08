@@ -1,6 +1,6 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include grid(400px);
   gap: calc(5 * var(--gap));
 
   @include tablet-lg {

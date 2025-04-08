@@ -44,6 +44,11 @@
   background-clip: text;
 }
 
+@mixin grid($minWidth) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min($minWidth, 100%), 1fr));
+}
+
 @mixin imageShadow {
   position: relative;
 

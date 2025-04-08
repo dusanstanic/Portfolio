@@ -4,15 +4,13 @@
 }
 
 .tools {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include grid(325px);
   column-gap: calc(2 * var(--gap));
   row-gap: calc(2 * var(--gap));
   max-height: 400px;
   overflow: auto;
 
   @include desktop {
-    grid-template-columns: 1fr;
     gap: calc(2 * var(--gap));
   }
 }

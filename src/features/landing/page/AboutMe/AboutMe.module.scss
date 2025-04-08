@@ -1,10 +1,8 @@
 .aboutMe {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include grid(275px);
   gap: calc(3 * var(--gap));
 
   @include desktop {
-    grid-template-columns: 1fr;
     gap: calc(8 * var(--gap));
   }
 }
