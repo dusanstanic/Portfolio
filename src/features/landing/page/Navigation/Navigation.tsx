@@ -68,7 +68,7 @@ export const Navigation = () => {
             <Link
               onClick={() => {
                 openInNewTab(
-                  "https://drive.google.com/file/d/1UGKUgZ0kn-g-G_uGh6C3vPNkQQpjEw8_/view?usp=drive_link"
+                  "https://drive.google.com/file/d/1HqES7eytNpRSufEqT7f-9JOGAZByCVj8/view?usp=sharing"
                 );
               }}
             >
