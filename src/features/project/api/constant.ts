@@ -1,4 +1,10 @@
-import { HiveTools, LCITools, SchoolGigTools, VanillaTools } from "./tools";
+import {
+  HiveTools,
+  KeyPerTools,
+  LCITools,
+  SchoolGigTools,
+  VanillaTools,
+} from "./tools";
 
 export const PROJECTS = [
   {
@@ -51,5 +57,14 @@ export const PROJECTS = [
     description:
       "Platform for the entire suite of LCI products and their associated systems. This transformation involves the utilization of cloud-based solutions that can easily be expanded and seamlessly integrated, ensuring the delivery of secure and scalable services to clients.",
     tools: LCITools,
+  },
+  {
+    id: "5",
+    title: "KeyPer",
+    keyPoints: [
+      `Worked closely with an international brand to develop an interface for managing devices`,
+    ],
+    description: "Platform for key generation",
+    tools: KeyPerTools,
   },
 ];

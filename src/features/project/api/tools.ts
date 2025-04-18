@@ -98,3 +98,17 @@ export const LCITools = [
   GithubTool,
   AWSTool,
 ];
+
+export const KeyPerTools = [
+  JavascriptTool,
+  TypescriptTool,
+  ReactTool,
+  TanstackQueryTool,
+  ReactHookFormTool,
+  ZodTool,
+  TailWindCSSTool,
+  ReactTestingLibraryTool,
+  JestTool,
+  FigmaTool,
+  GithubTool,
+];
