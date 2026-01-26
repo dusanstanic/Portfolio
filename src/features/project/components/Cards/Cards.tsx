@@ -10,10 +10,12 @@ interface ICardsProps {
 
 export const Cards = ({ projects }: ICardsProps) => {
   return (
-    <div className={classes.cards}>
+    <ul className={classes.cards}>
       {projects.map((project) => (
-        <Card {...project} />
+        <li>
+          <Card {...project} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };

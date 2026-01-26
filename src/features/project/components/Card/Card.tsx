@@ -17,11 +17,12 @@ export const Card = ({ id, title, description, tools }: IProject) => {
   const navigate = useNavigate();
 
   return (
-    <div className={classes.card}>
+    <article className={classes.card}>
       <h3>{title}</h3>
       <p className={classes.description}>{description}</p>
       <Pills pills={tools} displayCount={4} />
       <Button
+        style={{ justifySelf: "start" }}
         isAnimated={false}
         onClick={() => navigate(ROUTES.projectId.replace(":id", id.toString()))}
       >
@@ -30,6 +31,6 @@ export const Card = ({ id, title, description, tools }: IProject) => {
           <FontAwesomeIcon icon={faArrowRight} />
         </div>
       </Button>
-    </div>
+    </article>
   );
 };

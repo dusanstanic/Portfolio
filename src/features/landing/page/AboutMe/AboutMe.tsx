@@ -9,7 +9,7 @@ interface IAboutMeProps {
 
 export const AboutMe = ({ title, text }: IAboutMeProps) => {
   return (
-    <div className={classes.aboutMe} id="aboutMe">
+    <section className={classes.aboutMe} id="aboutMe">
       <div className={classes.headingContainer}>
         <h3 className={classes.heading}>{title}</h3>
       </div>
@@ -19,6 +19,6 @@ export const AboutMe = ({ title, text }: IAboutMeProps) => {
         </div>
         <p className={classes.text}>{text}</p>
       </div>
-    </div>
+    </section>
   );
 };

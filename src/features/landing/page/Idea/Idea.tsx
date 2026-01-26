@@ -16,7 +16,7 @@ export const Idea = ({
   ...props
 }: IIdeaProps) => {
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       <div className={classes.headingContainer}>
         <h2>
           <div className={classes.iconContainer}>
@@ -27,6 +27,6 @@ export const Idea = ({
         <h2>{subTitle}</h2>
       </div>
       <SayHello {...props} />
-    </div>
+    </section>
   );
 };

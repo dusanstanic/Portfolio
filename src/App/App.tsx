@@ -1,6 +1,8 @@
 import { Analytics } from "@vercel/analytics/react";
 
-import { Route, Routes } from "react-router";
+import { useEffect } from "react";
+
+import { Route, Routes, useLocation } from "react-router";
 
 import { ROUTES } from "@/routes/routes";
 
@@ -15,9 +17,25 @@ import { ToggleButton } from "@/features/theme/components/ToggleButton/ToggleBut
 
 import classes from "./App.module.scss";
 
+function ScrollToHash() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
+  return null;
+}
+
 export const App = () => {
   return (
     <>
+      <ScrollToHash />
       <Analytics />
       <ThemeProvider>
         <div className={classes.container}>

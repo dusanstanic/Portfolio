@@ -10,7 +10,7 @@ interface IMainProps {
 
 export const Main = ({ tools }: IMainProps) => {
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       <div>
         <h4 className={classes.heading}>My Stacks</h4>
         <p>
@@ -23,6 +23,6 @@ export const Main = ({ tools }: IMainProps) => {
           <Card {...tool} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };

@@ -13,7 +13,11 @@ export const ToggleButton = () => {
 
   return (
     <div className={classes.container}>
-      <Button onClick={toggleTheme} isAnimated={false}>
+      <Button
+        aria-pressed={darkMode}
+        aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+        onClick={toggleTheme}
+      >
         {darkMode ? (
           <FontAwesomeIcon icon={faSun} />
         ) : (

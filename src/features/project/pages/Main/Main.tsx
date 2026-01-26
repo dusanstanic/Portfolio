@@ -10,11 +10,11 @@ interface IProjectProps {
 
 export const Main = (props: IProjectProps) => {
   return (
-    <div id="projects">
+    <section id="projects">
       <h2>Projects</h2>
       <div className={classes.cards}>
         <Cards {...props} />
       </div>
-    </div>
+    </section>
   );
 };

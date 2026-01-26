@@ -59,16 +59,16 @@
     width: 100%;
   }
 
-  .line:nth-child(0) {
+  .line:nth-child(1) {
     top: 0;
   }
 
-  .line:nth-child(1) {
+  .line:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .line:nth-child(2) {
+  .line:nth-child(3) {
     bottom: 0;
   }
 }

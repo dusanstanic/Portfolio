@@ -81,6 +81,11 @@ li {
   display: flex;
 }
 
+:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -182,4 +187,8 @@ h6 {
   @include tablet-lg {
     font-size: 1.2rem;
   }
+}
+
+.button:focus {
+  background-color: red;
 }

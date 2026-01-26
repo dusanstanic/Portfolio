@@ -23,21 +23,19 @@ export const Button = ({
   ...props
 }: IButtonProps) => {
   return (
-    <div>
-      <motion.button
-        whileTap={{ scale: 0.85 }}
-        whileHover={{ scale: 1.05 }}
-        className={getClassName({
-          variant,
-          className,
-          rounded,
-          size,
-          isAnimated,
-        })}
-        {...props}
-      >
-        {children}
-      </motion.button>
-    </div>
+    <motion.button
+      whileTap={{ scale: 0.85 }}
+      whileHover={{ scale: 1.05 }}
+      className={getClassName({
+        variant,
+        className,
+        rounded,
+        size,
+        isAnimated,
+      })}
+      {...props}
+    >
+      {children}
+    </motion.button>
   );
 };
