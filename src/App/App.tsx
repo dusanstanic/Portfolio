@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
-
 import { useEffect } from "react";
 
 import { Route, Routes, useLocation } from "react-router";
@@ -36,7 +34,6 @@ export const App = () => {
   return (
     <>
       <ScrollToHash />
-      <Analytics />
       <ThemeProvider>
         <div className={classes.container}>
           <Navigation />
