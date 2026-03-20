@@ -1,13 +1,13 @@
-import image from "@/assets/DusanStanic.jpg";
+import image from '@/assets/DusanStanic.jpg';
 
-import classes from "./AboutMe.module.scss";
+import classes from './AboutMe.module.scss';
 
-interface IAboutMeProps {
+interface Props {
   title: string;
   text: string;
 }
 
-export const AboutMe = ({ title, text }: IAboutMeProps) => {
+export const AboutMe = ({ title, text }: Props) => {
   return (
     <section className={classes.aboutMe} id="aboutMe">
       <div className={classes.headingContainer}>
@@ -15,7 +15,7 @@ export const AboutMe = ({ title, text }: IAboutMeProps) => {
       </div>
       <div>
         <div className={classes.imageWrapper}>
-          <img alt="User Image" src={image} className={classes["fade-img"]} />
+          <img alt="User Image" src={image} className={classes['fade-img']} />
         </div>
         <p className={classes.text}>{text}</p>
       </div>

@@ -1,17 +1,17 @@
 import {
-  ISocialsProps,
+  Props as SocialsProps,
   Socials,
-} from "@/features/landing/page/Hero/Socials/Socials";
-import { ContactMe } from "@/features/landing/page/Hero/ContactMe/ContactMe";
+} from '@/features/landing/page/Hero/Socials/Socials';
+import { ContactMe } from '@/features/landing/page/Hero/ContactMe/ContactMe';
 
-import classes from "./SayHello.module.scss";
+import classes from './SayHello.module.scss';
 
-export interface ISayHelloProps extends ISocialsProps {
+export interface Props extends SocialsProps {
   text: string;
   email: string;
 }
 
-export const SayHello = ({ email, socialLinks, text }: ISayHelloProps) => {
+export const SayHello = ({ email, socialLinks, text }: Props) => {
   return (
     <div className={classes.container}>
       <Socials socialLinks={socialLinks} />

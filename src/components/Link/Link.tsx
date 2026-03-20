@@ -1,26 +1,27 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 
-import { vairant } from "./type";
-import { getClassName } from "./helper";
-import { NavLink, NavLinkProps } from "react-router";
+import { NavLink, NavLinkProps } from 'react-router';
 
-interface ILinkProps extends NavLinkProps {
+import { Variant } from './type';
+import { getClassName } from './helper';
+
+interface Props extends NavLinkProps {
   children: ReactElement | string;
-  variant?: vairant;
+  Variant?: Variant;
   rounded?: boolean;
   className?: string;
 }
 
 export const Link = ({
   children,
-  variant = "default",
+  Variant = 'default',
   rounded = true,
   className,
   to,
   ...props
-}: ILinkProps) => {
-  const isExternal = typeof to === "string" && /^(https?:)?\/\//.test(to);
-  const classes = getClassName({ variant, className, rounded });
+}: Props) => {
+  const isExternal = typeof to === 'string' && /^(https?:)?\/\//.test(to);
+  const classes = getClassName({ Variant, className, rounded });
 
   if (isExternal) {
     return (
@@ -29,7 +30,7 @@ export const Link = ({
         target="_blank"
         rel="noopener noreferrer"
         className={classes}
-        aria-label={props["aria-label"]}
+        aria-label={props['aria-label']}
       >
         {children}
       </a>
@@ -41,7 +42,7 @@ export const Link = ({
       className={classes}
       to={to}
       {...props}
-      aria-label={props["aria-label"]}
+      aria-label={props['aria-label']}
     >
       {children}
     </NavLink>

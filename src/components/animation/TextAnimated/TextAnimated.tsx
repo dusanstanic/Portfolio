@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import classes from "./TextAnimated.module.scss";
+import classes from './TextAnimated.module.scss';
 
-interface ITextAnimatedProps {
+interface Props {
   words: Array<string>;
 }
 
-export const TextAnimated = ({ words }: ITextAnimatedProps) => {
+export const TextAnimated = ({ words }: Props) => {
   return (
     <>
       {words.map((word) => {
@@ -30,7 +30,7 @@ export const TextAnimated = ({ words }: ITextAnimatedProps) => {
 
         return (
           <>
-            <>{letters}</>{" "}
+            <>{letters}</>{' '}
           </>
         );
       })}

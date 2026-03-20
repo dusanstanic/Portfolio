@@ -1,1 +1,1 @@
-export type vairant = "default" | "primary" | "secondary";
+export type Variant = 'default' | 'primary' | 'secondary';

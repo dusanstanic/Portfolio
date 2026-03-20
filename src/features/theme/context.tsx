@@ -4,30 +4,30 @@ import {
   useContext,
   useEffect,
   useState,
-} from "react";
+} from 'react';
 
-interface IThemeContext {
+interface ThemeContext {
   toggleTheme: () => void;
   darkMode: boolean;
 }
 
-const ThemeContext = createContext<IThemeContext | undefined>(undefined);
+const ThemeContext = createContext<ThemeContext | undefined>(undefined);
 
 export const useThemeContext = () => {
   const context = useContext(ThemeContext);
 
   if (context === undefined) {
-    throw new Error("useTheme must be used within a ThemeProvider");
+    throw new Error('useTheme must be used within a ThemeProvider');
   }
 
   return context;
 };
 
-interface IThemeProviderProps {
+interface Props {
   children: ReactElement;
 }
 
-export const ThemeProvider = ({ children }: IThemeProviderProps) => {
+export const ThemeProvider = ({ children }: Props) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleTheme = () => {
@@ -36,8 +36,8 @@ export const ThemeProvider = ({ children }: IThemeProviderProps) => {
 
   useEffect(() => {
     document.documentElement.setAttribute(
-      "data-theme",
-      darkMode ? "dark" : "light"
+      'data-theme',
+      darkMode ? 'dark' : 'light'
     );
   }, [darkMode]);
 

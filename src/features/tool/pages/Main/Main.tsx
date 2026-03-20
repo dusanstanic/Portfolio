@@ -1,14 +1,14 @@
-import { ITool } from "@/features/project/api/type";
+import { ITool } from '@/features/project/api/type';
 
-import { Card } from "@/features/tool/components/Card/Card";
+import { Card } from '@/features/tool/components/Card/Card';
 
-import classes from "./Main.module.scss";
+import classes from './Main.module.scss';
 
-interface IMainProps {
+interface Props {
   tools: Array<ITool>;
 }
 
-export const Main = ({ tools }: IMainProps) => {
+export const Main = ({ tools }: Props) => {
   return (
     <section className={classes.container}>
       <div>

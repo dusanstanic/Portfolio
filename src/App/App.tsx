@@ -1,39 +1,25 @@
-import { useEffect } from "react";
+import { Route, Routes } from 'react-router';
 
-import { Route, Routes, useLocation } from "react-router";
+import { ROUTES } from '@/routes/routes';
 
-import { ROUTES } from "@/routes/routes";
+import { ThemeProvider } from '@/features/theme/context';
 
-import { ThemeProvider } from "@/features/theme/context";
+import { Navigation } from '@/features/landing/page/Navigation/Navigation';
 
-import { Navigation } from "@/features/landing/page/Navigation/Navigation";
+import { Landing } from '@/features/landing/page/Landing/Landing';
+import { Project } from '@/features/project/pages/Project/Project';
 
-import { Landing } from "@/features/landing/page/Landing/Landing";
-import { Project } from "@/features/project/pages/Project/Project";
+import { ToggleButton } from '@/features/theme/components/ToggleButton/ToggleButton';
 
-import { ToggleButton } from "@/features/theme/components/ToggleButton/ToggleButton";
+import { useScrollToHash } from '@/utils/hooks/useScrollToHash';
 
-import classes from "./App.module.scss";
-
-function ScrollToHash() {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      const el = document.querySelector(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [hash]);
-
-  return null;
-}
+import classes from './App.module.scss';
 
 export const App = () => {
+  useScrollToHash();
+
   return (
     <>
-      <ScrollToHash />
       <ThemeProvider>
         <div className={classes.container}>
           <Navigation />

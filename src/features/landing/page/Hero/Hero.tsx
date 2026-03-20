@@ -1,16 +1,16 @@
-import { TextAnimated } from "@/components/animation/TextAnimated/TextAnimated";
+import { TextAnimated } from '@/components/animation/TextAnimated/TextAnimated';
 
-import image from "@/assets/DusanStanic.jpg";
+import image from '@/assets/DusanStanic.jpg';
 
-import { SayHello, ISayHelloProps } from "./SayHello/SayHello";
+import { SayHello, Props as SayHelloProps } from './SayHello/SayHello';
 
-import classes from "./Hero.module.scss";
+import classes from './Hero.module.scss';
 
-interface IHeroProps extends ISayHelloProps {
+interface Props extends SayHelloProps {
   title: Array<string>;
 }
 
-export const Hero = ({ title, ...props }: IHeroProps) => {
+export const Hero = ({ title, ...props }: Props) => {
   return (
     <section className={classes.container}>
       <div className={classes.title}>

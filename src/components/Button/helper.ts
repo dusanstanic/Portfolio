@@ -1,10 +1,10 @@
-import { size, vairant } from "./type";
+import { size, vairant } from './type';
 
-import classes from "./Button.module.scss";
-import cssClasses from "./Button.module.css";
+import classes from './Button.module.scss';
+import cssClasses from './Button.module.css';
 
-interface IGetClassNameProps {
-  variant: vairant;
+interface Params {
+  Variant: vairant;
   rounded?: boolean;
   className?: string;
   isAnimated?: boolean;
@@ -12,18 +12,18 @@ interface IGetClassNameProps {
 }
 
 export const getClassName = ({
-  variant,
+  Variant,
   rounded,
   size,
   isAnimated,
-}: IGetClassNameProps) => {
+}: Params) => {
   return [
     isAnimated ? cssClasses.button : undefined,
     classes.button,
-    classes[variant],
+    classes[Variant],
     classes[size],
     rounded ? classes.rounded : undefined,
   ]
     .filter((value) => value !== undefined)
-    .join(" ");
+    .join(' ');
 };

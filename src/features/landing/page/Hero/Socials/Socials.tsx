@@ -1,16 +1,16 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import { Link } from "@/components/Link/Link";
+import { Link } from '@/components/Link/Link';
 
-import classes from "./Socials.module.scss";
+import classes from './Socials.module.scss';
 
-export interface ISocialsProps {
+export interface Props {
   socialLinks: { linkedInUrl: string };
 }
 
-export const Socials = ({ socialLinks }: ISocialsProps) => {
+export const Socials = ({ socialLinks }: Props) => {
   return (
     <Link
       to={socialLinks.linkedInUrl}

@@ -1,22 +1,22 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Button } from "@/components/Button/Button";
+import { Button } from '@/components/Button/Button';
 
-import { ITool } from "@/features/project/api/type";
+import { ITool } from '@/features/project/api/type';
 
-import classes from "./Pills.module.scss";
+import classes from './Pills.module.scss';
 
-interface IPillsProps {
+interface Props {
   pills: Array<ITool>;
   displayCount?: number;
 }
 
-export const Pills = ({ pills, displayCount }: IPillsProps) => {
+export const Pills = ({ pills, displayCount }: Props) => {
   return (
     <div className={classes.tools}>
       {pills
         .map(({ name, icon }) => (
-          <Button size="small" style={{ cursor: "auto" }} isAnimated={false}>
+          <Button size="small" style={{ cursor: 'auto' }} isAnimated={false}>
             <div className={classes.tool}>
               {name}
               <FontAwesomeIcon icon={icon} />

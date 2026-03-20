@@ -1,20 +1,20 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-import { SayHello, ISayHelloProps } from "./SayHello/SayHello";
+import { SayHello, Props as SayHelloProps } from './SayHello/SayHello';
 
-import classes from "./Idea.module.scss";
+import classes from './Idea.module.scss';
 
-interface IIdeaProps extends ISayHelloProps {
+interface Props extends SayHelloProps {
   title?: string;
   subTitle?: string;
 }
 
 export const Idea = ({
-  title = "Got an idea?",
-  subTitle = "Share with me",
+  title = 'Got an idea?',
+  subTitle = 'Share with me',
   ...props
-}: IIdeaProps) => {
+}: Props) => {
   return (
     <section className={classes.container}>
       <div className={classes.headingContainer}>

@@ -1,24 +1,20 @@
-import { vairant } from "./type";
+import { Variant } from './type';
 
-import classes from "./Link.module.scss";
+import classes from './Link.module.scss';
 
-interface IGetClassNameProps {
-  variant: vairant;
+interface Params {
+  Variant: Variant;
   rounded?: boolean;
   className?: string;
 }
 
-export const getClassName = ({
-  variant,
-  rounded,
-  className,
-}: IGetClassNameProps) => {
+export const getClassName = ({ Variant, rounded, className }: Params) => {
   return [
     className,
     classes.link,
-    classes[variant],
+    classes[Variant],
     rounded ? classes.rounded : undefined,
   ]
     .filter((value) => value !== undefined)
-    .join(" ");
+    .join(' ');
 };
