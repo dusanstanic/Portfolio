@@ -23,7 +23,6 @@ export const Card = ({ id, title, description, tools }: Project) => {
       <Pills pills={tools} displayCount={4} />
       <Button
         style={{ justifySelf: 'start' }}
-        isAnimated={false}
         onClick={() => navigate(ROUTES.projectId.replace(':id', id.toString()))}
         className={classes.button}
       >
