@@ -6,7 +6,12 @@
 }
 
 .tool {
+  background-color: var(--button-default-bg-color);
+  border-radius: 15px;
   display: flex;
   align-items: center;
   gap: calc(1 * var(--gap));
+  padding: 5px 10px;
+  font-weight: bold;
+  color: var(--button-default-text-color);
 }

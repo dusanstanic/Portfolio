@@ -16,9 +16,11 @@ export const getClassName = ({
   rounded,
   size,
   isAnimated,
+  className,
 }: Params) => {
   return [
     isAnimated ? cssClasses.button : undefined,
+    className ? className : undefined,
     classes.button,
     classes[variant],
     classes[size],

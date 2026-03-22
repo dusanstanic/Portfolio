@@ -13,11 +13,11 @@
 }
 
 .navigation {
+  margin: 0 auto;
+  max-width: var(--container-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--container-width);
-  margin: 0 auto;
   padding: 35px var(--padding-main);
   height: var(--navigation-height);
 

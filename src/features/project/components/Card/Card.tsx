@@ -25,11 +25,12 @@ export const Card = ({ id, title, description, tools }: Project) => {
         style={{ justifySelf: 'start' }}
         isAnimated={false}
         onClick={() => navigate(ROUTES.projectId.replace(':id', id.toString()))}
+        className={classes.button}
       >
-        <div className={classes.buttonContent}>
+        <>
           <span>Details</span>
           <FontAwesomeIcon icon={faArrowRight} />
-        </div>
+        </>
       </Button>
     </article>
   );

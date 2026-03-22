@@ -18,11 +18,13 @@ export const Main = ({ tools }: Props) => {
           techniques
         </p>
       </div>
-      <div className={classes.tools}>
+      <ul className={classes.tools}>
         {tools.map((tool) => (
-          <Card key={tool.name} {...tool} />
+          <li key={tool.name}>
+            <Card key={tool.name} {...tool} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

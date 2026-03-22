@@ -1,12 +1,10 @@
 .container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+
   display: grid;
   gap: calc(2 * var(--gap));
-  padding: var(--padding-main);
-}
-
-.main {
-  margin: 0 auto;
-  padding-top: var(--navigation-height);
+  padding: 0 var(--padding-main);
 
   @include desktop {
     max-width: 800px;
@@ -15,4 +13,8 @@
   @include tablet-lg {
     max-width: 390px;
   }
+}
+
+.main {
+  padding-top: var(--navigation-height);
 }

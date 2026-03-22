@@ -5,7 +5,7 @@ import { mainNavLinks } from '@/routes/links';
 
 import { ThemeProvider } from '@/features/theme/context';
 
-import { Navigation } from '@/features/landing/page/Navigation/Navigation';
+import Navigation from '@/features/landing/page/Navigation/Navigation';
 
 import { Landing } from '@/features/landing/page/Landing/Landing';
 import { Project } from '@/features/project/pages/Project/Project';

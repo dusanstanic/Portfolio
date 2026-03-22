@@ -16,10 +16,10 @@
   --gap: 0.5rem;
   --container-width: 1280px;
   --padding-main: calc(2 * var(--padding));
-  --navigation-height: 54px;
+  --navigation-height: 70px;
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   --bg-color: var(--white);
   --bg-color-100: var(--white-100);
   --text-color: var(--black);
@@ -27,7 +27,7 @@
   --button-default-text-color: var(--white);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bg-color: var(--black);
   --bg-color-100: var(--black-100);
   --text-color: var(--white);

@@ -1,19 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { ITool } from "@/features/project/api/type";
+import { ITool } from '@/features/project/api/type';
 
-import classes from "./Card.module.scss";
+import classes from './Card.module.scss';
 
-export const Card = ({ icon, name, description }: ITool) => {
+export const Card = ({ icon, name }: ITool) => {
   return (
-    <div className={classes.card}>
-      <div>
-        <FontAwesomeIcon icon={icon} fontSize={"1.4rem"} fontWeight={100} />
-      </div>
-      <div>
-        <span className={classes.name}>{name}</span>
-        <p>{description}</p>
-      </div>
-    </div>
+    <article className={classes.card}>
+      <FontAwesomeIcon icon={icon} fontSize={'1.4rem'} fontWeight={100} />
+      <p className={classes.name}>{name}</p>
+    </article>
   );
 };

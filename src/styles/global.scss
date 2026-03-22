@@ -23,8 +23,6 @@ body {
 
 body > #root {
   height: 100%;
-  max-width: var(--container-width);
-  margin: 0 auto;
   line-height: 1.5;
 }
 
@@ -77,18 +75,14 @@ ul {
   padding: 0;
 }
 
-li {
-  display: flex;
-}
-
 :focus-visible {
   outline: 2px solid #4f46e5;
   outline-offset: 2px;
 }
 
 button,
-input[type="submit"],
-input[type="reset"] {
+input[type='submit'],
+input[type='reset'] {
   background: none;
   color: inherit;
   border: none;
