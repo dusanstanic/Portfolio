@@ -1,11 +1,11 @@
-import { IProject } from "@/features/project/api/type";
+import { Project } from '@/features/project/api/type';
 
-import { Cards } from "@/features/project/components/Cards/Cards";
+import { Cards } from '@/features/project/components/Cards/Cards';
 
-import classes from "./Main.module.scss";
+import classes from './Main.module.scss';
 
 interface IProjectProps {
-  projects: Array<IProject>;
+  projects: Array<Project>;
 }
 
 export const Main = (props: IProjectProps) => {

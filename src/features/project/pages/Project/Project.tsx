@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { useParams } from "react-router";
+import { useParams } from 'react-router';
 
-import { PROJECTS } from "@/features/project/api/constant";
-import { IProject } from "@/features/project/api/type";
+import { PROJECTS } from '@/features/project/api/constant';
 
-import classes from "./Project.module.scss";
-import { Pills } from "@/features/tool/components/Pills/Pills";
+import classes from './Project.module.scss';
+import { Pills } from '@/features/tool/components/Pills/Pills';
 
 const fetchProject = (id: string | undefined) => {
-  return PROJECTS.find((project) => project.id === id) as IProject;
+  return PROJECTS.find((project) => project.id === id)!;
 };
 
 export const Project = () => {

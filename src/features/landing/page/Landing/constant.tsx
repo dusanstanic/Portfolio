@@ -1,6 +1,6 @@
-import { PROJECTS } from "@/features/project/api/constant";
+import { PROJECTS } from '@/features/project/api/constant';
 
-import { IProject } from "@/features/project/api/type";
+import { Project } from '@/features/project/api/type';
 
 import {
   AngularMaterialTool,
@@ -38,23 +38,23 @@ import {
   TypescriptTool,
   YupTool,
   ZodTool,
-} from "@/features/tool/api/tools";
+} from '@/features/tool/api/tools';
 
 export const HeroProps = {
-  title: ["Software", "Engineer", "Expert"],
+  title: ['Software', 'Engineer', 'Expert'],
   text: `Hello! I am Dusan, a high-performing software engineer with a passion for enabling growing businesses to scale by providing them with high-value technical solutions and possibilities, collaborating alongside various parties to identify business needs and consult on solutions.`,
-  socialLinks: { linkedInUrl: "https://www.linkedin.com/in/stanic-dusan/" },
-  email: "dusan.stanic97@hotmail.com",
+  socialLinks: { linkedInUrl: 'https://www.linkedin.com/in/stanic-dusan/' },
+  email: 'dusan.stanic97@hotmail.com',
 };
 
-export const ProjectProps: { projects: Array<IProject> } = {
+export const ProjectProps: { projects: Array<Project> } = {
   projects: PROJECTS,
 };
 
 export const AboutMeProps = {
   title:
-    "Hello! I am Dusan, a dedicated and creative software engineer with a passion for shaping the digital world.",
-  text: "I specialize in developing scalable and robust software architectures emphasizing reusability and maintainability, boosting team productivity and reduced bug occurrences",
+    'Hello! I am Dusan, a dedicated and creative software engineer with a passion for shaping the digital world.',
+  text: 'I specialize in developing scalable and robust software architectures emphasizing reusability and maintainability, boosting team productivity and reduced bug occurrences',
 };
 
 export const StacksProps = {
@@ -98,7 +98,7 @@ export const StacksProps = {
 };
 
 export const IdeaProps = {
-  text: "Ready for a development journey, or need development advice? Ping me for fun collaboration",
+  text: 'Ready for a development journey, or need development advice? Ping me for fun collaboration',
   socialLinks: HeroProps.socialLinks,
   email: HeroProps.email,
 };
