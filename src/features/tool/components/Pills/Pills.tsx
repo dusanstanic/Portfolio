@@ -16,7 +16,12 @@ export const Pills = ({ pills, displayCount }: Props) => {
     <div className={classes.tools}>
       {pills
         .map(({ name, icon }) => (
-          <Button size="small" style={{ cursor: 'auto' }} isAnimated={false}>
+          <Button
+            key={name}
+            size="small"
+            style={{ cursor: 'auto' }}
+            isAnimated={false}
+          >
             <div className={classes.tool}>
               {name}
               <FontAwesomeIcon icon={icon} />

@@ -1,19 +1,19 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-import { useNavigate } from "react-router";
+import { useNavigate } from 'react-router';
 
-import { ROUTES } from "@/routes/routes";
+import { ROUTES } from '@/routes/routes';
 
-import { Button } from "@/components/Button/Button";
+import { Button } from '@/components/Button/Button';
 
-import { IProject } from "@/features/project/api/type";
+import { Project } from '@/features/project/api/type';
 
-import { Pills } from "@/features/tool/components/Pills/Pills";
+import { Pills } from '@/features/tool/components/Pills/Pills';
 
-import classes from "./Card.module.scss";
+import classes from './Card.module.scss';
 
-export const Card = ({ id, title, description, tools }: IProject) => {
+export const Card = ({ id, title, description, tools }: Project) => {
   const navigate = useNavigate();
 
   return (
@@ -22,9 +22,9 @@ export const Card = ({ id, title, description, tools }: IProject) => {
       <p className={classes.description}>{description}</p>
       <Pills pills={tools} displayCount={4} />
       <Button
-        style={{ justifySelf: "start" }}
+        style={{ justifySelf: 'start' }}
         isAnimated={false}
-        onClick={() => navigate(ROUTES.projectId.replace(":id", id.toString()))}
+        onClick={() => navigate(ROUTES.projectId.replace(':id', id.toString()))}
       >
         <div className={classes.buttonContent}>
           <span>Details</span>

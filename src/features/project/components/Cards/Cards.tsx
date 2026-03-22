@@ -1,18 +1,18 @@
-import { IProject } from "@/features/project/api/type";
+import { Project } from '@/features/project/api/type';
 
-import { Card } from "../Card/Card";
+import { Card } from '../Card/Card';
 
-import classes from "./Cards.module.scss";
+import classes from './Cards.module.scss';
 
-interface ICardsProps {
-  projects: Array<IProject>;
+interface Props {
+  projects: Array<Project>;
 }
 
-export const Cards = ({ projects }: ICardsProps) => {
+export const Cards = ({ projects }: Props) => {
   return (
     <ul className={classes.cards}>
       {projects.map((project) => (
-        <li>
+        <li key={project.title}>
           <Card {...project} />
         </li>
       ))}

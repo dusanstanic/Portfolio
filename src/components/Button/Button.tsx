@@ -2,12 +2,12 @@ import { ReactElement } from 'react';
 
 import { HTMLMotionProps, motion } from 'framer-motion';
 
-import { vairant, size } from './type';
+import { Variant, size } from './type';
 import { getClassName } from './helper';
 
 interface Props extends HTMLMotionProps<'button'> {
   children: ReactElement | string;
-  Variant?: vairant;
+  variant?: Variant;
   rounded?: boolean;
   size?: size;
   isAnimated?: boolean;
@@ -15,7 +15,7 @@ interface Props extends HTMLMotionProps<'button'> {
 
 export const Button = ({
   children,
-  Variant = 'default',
+  variant = 'default',
   rounded = true,
   size = 'small',
   className,
@@ -27,7 +27,7 @@ export const Button = ({
       whileTap={{ scale: 0.85 }}
       whileHover={{ scale: 1.05 }}
       className={getClassName({
-        Variant,
+        variant,
         className,
         rounded,
         size,

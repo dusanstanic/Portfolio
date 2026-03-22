@@ -1,2 +1,2 @@
-export type vairant = "default" | "primary" | "secondary";
-export type size = "small" | "medium" | "large";
+export type Variant = 'default' | 'primary' | 'secondary';
+export type size = 'small' | 'medium' | 'large';

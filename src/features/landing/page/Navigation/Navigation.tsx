@@ -1,41 +1,73 @@
-import { useState } from "react";
+import { ReactElement, useMemo, useState } from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import { scrollToTop } from "@/utils/scroll";
+import { scrollToTop } from '@/utils/scroll';
 
-import { Link } from "@/components/Link/Link";
+import { Link } from '@/components/Link/Link';
 
-import classes from "./Navigation.module.scss";
+import classes from './Navigation.module.scss';
 
-export const Navigation = () => {
+type LinkPosition = 'left' | 'right';
+
+export interface NavigationLinkProps {
+  pathname?: string;
+  hash?: string;
+  externalLink?: string;
+  text: string;
+  config?: {
+    position: LinkPosition;
+    scrollToTop?: boolean;
+  };
+}
+
+interface Props {
+  links: Array<NavigationLinkProps>;
+}
+
+export const Navigation = ({ links }: Props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const renderListItem = ({ text, config, ...props }: NavigationLinkProps) => {
+    return (
+      <li key={text}>
+        <Link
+          to={props.externalLink ? props.externalLink : props}
+          onClick={config?.scrollToTop ? scrollToTop : undefined}
+        >
+          {text}
+        </Link>
+      </li>
+    );
+  };
+
+  const { leftLinks, rightLinks } = useMemo(() => {
+    const leftLinks: Array<ReactElement> = [];
+    const rightLinks: Array<ReactElement> = [];
+
+    links.map((props) => {
+      if (!props.config?.position || props.config.position === 'left') {
+        leftLinks.push(renderListItem(props));
+      } else {
+        rightLinks.push(renderListItem(props));
+      }
+    });
+
+    return { rightLinks, leftLinks };
+  }, [links]);
 
   const renderLinks = () => {
     return (
-      <>
-        <ul className={classes.list}>
-          <li>
-            <Link to={""} onClick={scrollToTop}>
-              Home
-            </Link>
-          </li>
-        </ul>
-        <ul className={classes.list}>
-          <li>
-            <Link to={{ pathname: "/", hash: "#projects" }}>Projects</Link>
-          </li>
-          <li>
-            <Link to={{ pathname: "/", hash: "#aboutMe" }}>About Me</Link>
-          </li>
-          <li>
-            <Link to="https://drive.google.com/file/d/1HqES7eytNpRSufEqT7f-9JOGAZByCVj8/view?usp=sharing">
-              Get CV
-            </Link>
-          </li>
-        </ul>
-      </>
+      <ul className={classes.list}>
+        <div className={classes.left}>
+          {leftLinks.map((linkElement) => linkElement)}
+        </div>
+        <div className={classes.right}>
+          {rightLinks.map((linkElement) => linkElement)}
+        </div>
+        {}
+      </ul>
     );
   };
 
@@ -60,7 +92,7 @@ export const Navigation = () => {
         className={classes.close}
         onClick={() => setIsMobileMenuOpen(false)}
       >
-        <FontAwesomeIcon icon={faXmark} fontSize={"1.8rem"} />
+        <FontAwesomeIcon icon={faXmark} fontSize={'1.8rem'} />
       </button>
     </div>
   );

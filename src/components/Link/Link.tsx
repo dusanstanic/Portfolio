@@ -7,21 +7,21 @@ import { getClassName } from './helper';
 
 interface Props extends NavLinkProps {
   children: ReactElement | string;
-  Variant?: Variant;
+  variant?: Variant;
   rounded?: boolean;
   className?: string;
 }
 
 export const Link = ({
   children,
-  Variant = 'default',
+  variant = 'default',
   rounded = true,
   className,
   to,
   ...props
 }: Props) => {
   const isExternal = typeof to === 'string' && /^(https?:)?\/\//.test(to);
-  const classes = getClassName({ Variant, className, rounded });
+  const classes = getClassName({ variant, className, rounded });
 
   if (isExternal) {
     return (

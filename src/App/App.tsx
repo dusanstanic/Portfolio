@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router';
 
 import { ROUTES } from '@/routes/routes';
+import { mainNavLinks } from '@/routes/links';
 
 import { ThemeProvider } from '@/features/theme/context';
 
@@ -15,14 +16,14 @@ import { useScrollToHash } from '@/utils/hooks/useScrollToHash';
 
 import classes from './App.module.scss';
 
-export const App = () => {
+const App = () => {
   useScrollToHash();
 
   return (
     <>
       <ThemeProvider>
         <div className={classes.container}>
-          <Navigation />
+          <Navigation links={mainNavLinks} />
           <main className={classes.main}>
             <Routes>
               <Route index element={<Landing />} />
@@ -35,3 +36,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;

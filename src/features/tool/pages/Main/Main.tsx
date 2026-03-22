@@ -20,7 +20,7 @@ export const Main = ({ tools }: Props) => {
       </div>
       <div className={classes.tools}>
         {tools.map((tool) => (
-          <Card {...tool} />
+          <Card key={tool.name} {...tool} />
         ))}
       </div>
     </section>

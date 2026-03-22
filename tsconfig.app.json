@@ -24,8 +24,10 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "@test/*": ["./src/test/*"]
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }

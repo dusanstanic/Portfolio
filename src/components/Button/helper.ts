@@ -1,10 +1,10 @@
-import { size, vairant } from './type';
+import { size, Variant } from './type';
 
 import classes from './Button.module.scss';
 import cssClasses from './Button.module.css';
 
 interface Params {
-  Variant: vairant;
+  variant: Variant;
   rounded?: boolean;
   className?: string;
   isAnimated?: boolean;
@@ -12,7 +12,7 @@ interface Params {
 }
 
 export const getClassName = ({
-  Variant,
+  variant,
   rounded,
   size,
   isAnimated,
@@ -20,7 +20,7 @@ export const getClassName = ({
   return [
     isAnimated ? cssClasses.button : undefined,
     classes.button,
-    classes[Variant],
+    classes[variant],
     classes[size],
     rounded ? classes.rounded : undefined,
   ]
