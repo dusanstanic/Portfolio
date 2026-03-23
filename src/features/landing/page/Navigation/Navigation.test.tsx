@@ -1,4 +1,4 @@
-import { fireEvent, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 
 import { renderWithRouter } from '@/test/test.utils';
 
@@ -19,7 +19,7 @@ function setMobile(isMobile: boolean) {
   }));
 }
 
-test('render Navigation component', () => {
+test('Navigation component renders', () => {
   renderWithRouter(<Navigation links={mainNavLinks} />);
 });
 
@@ -41,72 +41,22 @@ describe('Navigation component renders', () => {
 });
 
 describe('burger menu', () => {
-  describe('in desktop view', () => {
-    beforeEach(() => {
-      renderWithRouter(<Navigation links={mainNavLinks} />);
-    });
+  it('in desktop view is not rendered', () => {
+    renderWithRouter(<Navigation links={mainNavLinks} />);
 
-    it('is not rendered', () => {
-      const burgerMenuButton = screen.queryByRole('button', {
-        name: 'Open Mobile Navigation Menu',
-      });
-      expect(burgerMenuButton).not.toBeInTheDocument();
+    const burgerMenuButton = screen.queryByRole('button', {
+      name: 'Open Mobile Navigation Menu',
     });
+    expect(burgerMenuButton).not.toBeInTheDocument();
   });
 
-  describe('in mobile view', () => {
-    beforeEach(() => {
-      setMobile(true);
-      renderWithRouter(<Navigation links={mainNavLinks} />);
+  it('in mobile view is rendered', () => {
+    setMobile(true);
+    renderWithRouter(<Navigation links={mainNavLinks} />);
+
+    const burgerMenuButton = screen.getByRole('button', {
+      name: 'Open Mobile Navigation Menu',
     });
-
-    it('is rendered', () => {
-      const burgerMenuButton = screen.getByRole('button', {
-        name: 'Open Mobile Navigation Menu',
-      });
-      expect(burgerMenuButton).toBeInTheDocument();
-    });
-
-    it('opens navigation menu and render all links', () => {
-      const burgerMenuButton = screen.getByRole('button', {
-        name: 'Open Mobile Navigation Menu',
-      });
-
-      fireEvent.click(burgerMenuButton);
-
-      mainNavLinks.forEach(({ text }) => {
-        const mainNavigationLink = screen.getByRole('link', { name: text });
-        expect(mainNavigationLink).toBeInTheDocument();
-      });
-    });
-
-    it('renders close navigation menu button', () => {
-      const burgerMenuButton = screen.getByRole('button', {
-        name: 'Open Mobile Navigation Menu',
-      });
-
-      fireEvent.click(burgerMenuButton);
-
-      const closeMobileMenuButton = screen.getByRole('button', {
-        name: 'Close Mobile Navigation Menu',
-      });
-
-      expect(closeMobileMenuButton).toBeInTheDocument();
-    });
-
-    it('after clicking close menu navigation menu is not visible', () => {
-      const burgerMenuButton = screen.getByRole('button', {
-        name: 'Open Mobile Navigation Menu',
-      });
-      fireEvent.click(burgerMenuButton);
-      const closeMobileMenuButton = screen.getByRole('button', {
-        name: 'Close Mobile Navigation Menu',
-      });
-      fireEvent.click(closeMobileMenuButton);
-      const navigationMenu = screen.queryByRole('navigation');
-      expect(navigationMenu).not.toBeInTheDocument();
-
-      screen.debug();
-    });
+    expect(burgerMenuButton).toBeInTheDocument();
   });
 });

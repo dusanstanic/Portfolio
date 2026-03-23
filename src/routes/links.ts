@@ -2,7 +2,7 @@ import { NavigationLinkProps } from '@/features/landing/page/Navigation/Navigati
 
 export const mainNavLinks: Array<NavigationLinkProps> = [
   {
-    pathname: '',
+    pathname: '/',
     text: 'Home',
     config: {
       position: 'left',
