@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     id: '5',
     title: 'KeyPer',
     keyPoints: [
-      `Worked closely with an international brand to develop an interface for managing devices`,
+      `Independently developed and maintained the entire frontend for a platform handling KMS, HSM and JC keys, along with certificates, enabling secure management of cryptographic assets`,
     ],
     description: 'Platform for key generation',
     tools: KeyPerTools,
