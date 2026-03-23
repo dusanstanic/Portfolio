@@ -27,7 +27,7 @@ export const mainNavLinks: Array<NavigationLinkProps> = [
   },
   {
     externalLink:
-      'https://drive.google.com/file/d/1HqES7eytNpRSufEqT7f-9JOGAZByCVj8/view?usp=sharing',
+      'https://drive.google.com/file/d/1j-yzwHxd0C9dmGVH4Zza9FeQ5g5Ug8Bm/view?usp=sharing',
     text: 'Get CV',
     config: {
       position: 'right',
