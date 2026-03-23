@@ -3,7 +3,7 @@ import { ReactElement, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import { useModalNavigation } from '@/hooks/useModalNavigation';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 
 import classes from './MobileNavigation.module.scss';
 
@@ -13,7 +13,7 @@ interface Props {
 
 const MobileNavigation = ({ children }: Props) => {
   const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
-  const navRef = useModalNavigation({
+  const navRef = useFocusTrap({
     isOpen: isMobileNavigationOpen,
     setIsOpen: setIsMobileNavigationOpen,
   });

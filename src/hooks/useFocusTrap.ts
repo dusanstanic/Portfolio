@@ -5,7 +5,7 @@ interface Params {
   setIsOpen: (value: boolean) => void;
 }
 
-export const useModalNavigation = ({ isOpen, setIsOpen }: Params) => {
+export const useFocusTrap = ({ isOpen, setIsOpen }: Params) => {
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
