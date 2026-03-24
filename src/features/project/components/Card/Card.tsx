@@ -9,7 +9,7 @@ import { Button } from '@/components/Button/Button';
 
 import { Project } from '@/features/project/api/type';
 
-import { Pills } from '@/features/tool/components/Pills/Pills';
+import { Pills } from '@/components/Pills/Pills';
 
 import classes from './Card.module.scss';
 

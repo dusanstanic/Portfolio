@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
-import { Button } from "@/components/Button/Button";
+import { Button } from '@/components/Button/Button';
 
-import { useThemeContext } from "@/features/theme/context";
+import { useThemeContext } from '@/features/theme/context';
 
-import classes from "./ToggleButton.module.scss";
+import classes from './ToggleButton.module.scss';
 
 export const ToggleButton = () => {
   const { toggleTheme, darkMode } = useThemeContext();
@@ -15,7 +15,7 @@ export const ToggleButton = () => {
     <div className={classes.container}>
       <Button
         aria-pressed={darkMode}
-        aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+        aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
         onClick={toggleTheme}
       >
         {darkMode ? (

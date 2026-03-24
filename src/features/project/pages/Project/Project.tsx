@@ -2,14 +2,11 @@ import { useState } from 'react';
 
 import { useParams } from 'react-router';
 
-import { PROJECTS } from '@/features/project/api/constant';
+import { Pills } from '@/components/Pills/Pills';
+
+import { fetchProject } from '../../api/fetchProject';
 
 import classes from './Project.module.scss';
-import { Pills } from '@/features/tool/components/Pills/Pills';
-
-const fetchProject = (id: string | undefined) => {
-  return PROJECTS.find((project) => project.id === id)!;
-};
 
 export const Project = () => {
   const { id } = useParams<{ id: string }>();
@@ -18,7 +15,7 @@ export const Project = () => {
   );
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} data-testid="project-page">
       <section>
         <h1>{title}</h1>
       </section>
