@@ -23,33 +23,20 @@
 }
 
 .list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
   width: 100%;
-
-  .left,
-  .right {
-    display: flex;
-    align-items: center;
-    gap: calc(2 * var(--gap));
-  }
-
-  .right {
-    justify-self: end;
-  }
+  gap: calc(2 * var(--gap));
 
   @include mobile {
-    grid-template-columns: 1fr;
-    gap: calc(2 * var(--gap));
+    flex-direction: column;
+  }
+}
 
-    .left,
-    .right {
-      justify-content: center;
-    }
+.spacer {
+  flex: 1;
 
-    .right {
-      flex-direction: column;
-      justify-self: center;
-    }
+  @include mobile {
+    display: none;
   }
 }
