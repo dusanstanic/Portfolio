@@ -10,12 +10,10 @@ interface Props {
 
 export const Cards = ({ projects }: Props) => {
   return (
-    <ul className={classes.cards}>
+    <section className={classes.cards}>
       {projects.map((project) => (
-        <li key={project.title}>
-          <Card {...project} />
-        </li>
+        <Card {...project} key={project.title} />
       ))}
-    </ul>
+    </section>
   );
 };
