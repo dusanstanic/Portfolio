@@ -28,11 +28,10 @@ const Navigation = ({ links }: Props) => {
 
   const renderLinks = () => {
     return (
-      <ul className={classes.list}>
-        {leftSideLinks}
-        <div className={classes.spacer}></div>
-        {rightSideLinks}
-      </ul>
+      <div className={classes.list}>
+        <ul className={classes.left}>{leftSideLinks}</ul>
+        <ul className={classes.right}>{rightSideLinks}</ul>
+      </div>
     );
   };
 

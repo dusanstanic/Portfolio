@@ -28,15 +28,25 @@
   width: 100%;
   gap: calc(2 * var(--gap));
 
+  .left {
+    margin-right: auto;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: calc(2 * var(--gap));
+  }
+
   @include mobile {
     flex-direction: column;
-  }
-}
 
-.spacer {
-  flex: 1;
+    .left {
+      margin: unset;
+    }
 
-  @include mobile {
-    display: none;
+    .right {
+      flex-direction: column;
+    }
   }
 }
