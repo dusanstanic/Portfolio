@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: calc(2 * var(--gap));
+  flex-wrap: wrap;
+}
+
 .tools {
   display: flex;
   align-items: center;

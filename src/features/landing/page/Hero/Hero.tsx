@@ -2,17 +2,20 @@ import { TextAnimated } from '@/components/animation/TextAnimated/TextAnimated';
 
 import image from '@/assets/DusanStanic.jpg';
 
-import { SayHello, Props as SayHelloProps } from './SayHello/SayHello';
+import { SayHello } from './SayHello/SayHello';
 
 import classes from './Hero.module.scss';
 
-interface Props extends SayHelloProps {
+interface Props {
   title: Array<string>;
+  text: string;
+  email: string;
+  socialLinks: { linkedInUrl: string };
 }
 
 export const Hero = ({ title, ...props }: Props) => {
   return (
-    <section className={classes.container}>
+    <section className={classes.container} role="region">
       <div className={classes.title}>
         <h1 className={classes.heading}>
           <TextAnimated words={title}></TextAnimated>
@@ -22,7 +25,11 @@ export const Hero = ({ title, ...props }: Props) => {
         <img alt="Image of user" src={image} />
         <figcaption>User profile photo</figcaption>
       </figure>
-      <SayHello {...props} />
+      <SayHello
+        email={props.email}
+        socialLinks={props.socialLinks}
+        text={props.text}
+      />
     </section>
   );
 };

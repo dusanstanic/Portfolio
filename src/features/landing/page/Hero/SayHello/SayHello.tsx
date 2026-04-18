@@ -1,11 +1,12 @@
 import { ContactMe } from '../ContactMe/ContactMe';
-import { Props as SocialProps, Socials } from '../Socials/Socials';
+import { Socials } from '../Socials/Socials';
 
 import classes from './SayHello.module.scss';
 
-export interface Props extends SocialProps {
+interface Props {
   text: string;
   email: string;
+  socialLinks: { linkedInUrl: string };
 }
 
 export const SayHello = ({ email, socialLinks, text }: Props) => {

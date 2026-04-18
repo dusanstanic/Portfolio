@@ -29,8 +29,12 @@ const Navigation = ({ links }: Props) => {
   const renderLinks = () => {
     return (
       <ul className={classes.list}>
-        <div className={classes.left}>{leftSideLinks}</div>
-        <div className={classes.right}>{rightSideLinks}</div>
+        <li className={classes.left}>
+          <ul>{leftSideLinks}</ul>
+        </li>
+        <li className={classes.right}>
+          <ul>{rightSideLinks}</ul>
+        </li>
       </ul>
     );
   };
