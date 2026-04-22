@@ -15,7 +15,7 @@ interface Props {
 
 export const Hero = ({ title, ...props }: Props) => {
   return (
-    <section className={classes.container} role="region">
+    <section className={classes.container}>
       <div className={classes.title}>
         <h1 className={classes.heading}>
           <TextAnimated words={title}></TextAnimated>

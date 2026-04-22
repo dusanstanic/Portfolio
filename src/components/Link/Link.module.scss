@@ -1,7 +1,21 @@
 .link {
-  transition: all 0.5s ease-in-out;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+
+  &:visited {
+    opacity: 0.7;
+  }
 
   &:hover {
-    filter: brightness(60%);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--text-color);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 }

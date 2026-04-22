@@ -14,10 +14,10 @@ describe('Hero component', () => {
     renderWithRouter(<Hero {...HeroProps} />);
   });
 
-  it('renders container', () => {
-    const region = screen.getByRole('region');
-    expect(region).toBeInTheDocument();
-  });
+  // it('renders container', () => {
+  //   const region = screen.getByRole('region');
+  //   expect(region).toBeInTheDocument();
+  // });
 
   it('renders with the title displayed', () => {
     const title = screen.getByRole('heading', {

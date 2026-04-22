@@ -18,11 +18,11 @@ export const Main = ({ tools }: Props) => {
           techniques
         </p>
       </div>
-      <section className={classes.tools}>
+      <ul className={classes.tools} aria-label="Tools list">
         {tools.map((tool) => (
           <Card key={tool.name} {...tool} />
         ))}
-      </section>
+      </ul>
     </section>
   );
 };
