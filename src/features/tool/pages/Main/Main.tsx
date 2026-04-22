@@ -18,7 +18,7 @@ export const Main = ({ tools }: Props) => {
           techniques
         </p>
       </div>
-      <ul className={classes.tools} aria-label="Tools list">
+      <ul className={classes.tools} aria-label="Tools" tabIndex={0}>
         {tools.map((tool) => (
           <Card key={tool.name} {...tool} />
         ))}

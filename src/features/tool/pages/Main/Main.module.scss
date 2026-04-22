@@ -7,8 +7,8 @@
   @include grid(325px);
   column-gap: calc(2 * var(--gap));
   row-gap: calc(2 * var(--gap));
-  // max-height: 400px;
-  // overflow: auto;
+  max-height: 400px;
+  overflow: auto;
 
   @include desktop {
     gap: calc(2 * var(--gap));
